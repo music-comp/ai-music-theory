@@ -1276,13 +1276,14 @@ mod tests {
         let server = build_server(state);
 
         // Without graph feature:
-        //   3 concept + 2 guide + 5 source + 2 fts + 1 semantic + 1 question + 1 health + 9 music theory = 24
+        //   3 concept + 2 guide + 5 source + 2 fts + 1 semantic + 1 question + 1 health
+        //   + 9 music theory + 12 OTH = 36
         // With graph feature:
-        //   24 + 17 graph = 41
+        //   36 + 17 graph = 53
         #[cfg(feature = "graph")]
-        assert_eq!(server.registry().tool_count(), 41);
+        assert_eq!(server.registry().tool_count(), 53);
         #[cfg(not(feature = "graph"))]
-        assert_eq!(server.registry().tool_count(), 24);
+        assert_eq!(server.registry().tool_count(), 36);
     }
 
     #[tokio::test]

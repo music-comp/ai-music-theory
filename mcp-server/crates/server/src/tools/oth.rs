@@ -1672,17 +1672,27 @@ mod tests {
 
     #[test]
     fn test_get_oth_neighbors_with_orbit_filter() {
+        // First get all neighbors to find a valid orbit to filter by
+        let all = get_oth_neighbors(GetOthNeighborsArgs {
+            pcs: Some(vec![0, 2, 7, 9]),
+            notes: None,
+            orbit: None,
+        })
+        .unwrap();
+        let target_orbit = all.neighbors[0].orbit.clone();
+
         let result = get_oth_neighbors(GetOthNeighborsArgs {
             pcs: Some(vec![0, 2, 7, 9]),
             notes: None,
-            orbit: Some("Q778".to_string()),
+            orbit: Some(target_orbit.clone()),
         })
         .unwrap();
         // Degree is still the full degree
         assert_eq!(result.degree, 8);
         // But filtered neighbors should be a subset
+        assert!(result.neighbors.len() <= 8);
         for n in &result.neighbors {
-            assert_eq!(n.orbit, "Q778");
+            assert_eq!(n.orbit, target_orbit);
         }
     }
 
