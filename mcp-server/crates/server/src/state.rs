@@ -83,8 +83,8 @@ impl AppState {
     ///
     /// Returns `Err` if simple search initialization fails.
     pub async fn new(config: Config) -> Result<Self> {
-        let mut search_config = crate::search::to_fabryk_search_config(&config.search)?;
-        // Set content_path so SimpleSearch knows where to scan
+        // Build a SearchConfig for SimpleSearch (always available, no fts feature needed)
+        let mut search_config = fabryk::fts::SearchConfig::default();
         if let Ok(cards_path) = config.paths.concept_cards_path() {
             search_config.content_path = Some(cards_path.to_string_lossy().into_owned());
         }
@@ -140,7 +140,6 @@ impl AppState {
         }
         "simple"
     }
-
 }
 
 /// Spawn an async task that loads or rebuilds the FTS index.
@@ -1212,7 +1211,10 @@ Test content.
         state.graph.service().set_state(ServiceState::Starting);
         let result = state.graph.require();
         assert!(result.is_err());
-        assert!(result.unwrap_err().to_string().contains("currently initializing"));
+        assert!(result
+            .unwrap_err()
+            .to_string()
+            .contains("currently initializing"));
     }
 
     #[tokio::test]
@@ -1595,7 +1597,10 @@ Test content.
         state.graph.service().set_state(ServiceState::Starting);
         let result = state.graph.require();
         assert!(result.is_err());
-        assert!(result.unwrap_err().to_string().contains("currently initializing"));
+        assert!(result
+            .unwrap_err()
+            .to_string()
+            .contains("currently initializing"));
 
         state.graph.service().set_state(ServiceState::Ready);
         let result = state.graph.require();
