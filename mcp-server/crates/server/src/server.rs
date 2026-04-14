@@ -571,7 +571,7 @@ pub fn build_server(state: AppState) -> FabrykMcpServer {
 
     #[cfg(feature = "vector")]
     {
-        if let Ok(guard) = state.vector_backend.read() {
+        if let Ok(guard) = state.vector.inner().read() {
             if let Some(ref backend) = *guard {
                 probes.push(fabryk::vector::vector_probe(Arc::clone(backend)));
             }

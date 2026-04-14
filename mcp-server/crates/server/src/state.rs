@@ -9,14 +9,8 @@ use std::sync::Arc;
 #[cfg(feature = "fts")]
 use std::path::Path;
 
-#[cfg(feature = "fts")]
-use std::sync::RwLock as StdRwLock;
-
-#[cfg(any(feature = "graph", feature = "vector"))]
-use std::sync::RwLock;
-
 #[cfg(any(feature = "fts", feature = "graph", feature = "vector"))]
-use fabryk::core::{ServiceHandle, ServiceState};
+use fabryk::core::{BackendSlot, ServiceState};
 
 use crate::config::Config;
 use crate::error::Result;
@@ -42,43 +36,31 @@ pub struct AppState {
     /// Simple search backend (always available)
     simple_backend: Arc<SimpleSearch>,
 
-    /// FTS backend (optional, may be None initially)
+    /// FTS backend slot (service lifecycle + backend storage)
     #[cfg(feature = "fts")]
-    fts_backend: Arc<StdRwLock<Option<Arc<TantivySearch>>>>,
+    pub fts: BackendSlot<Arc<TantivySearch>>,
 
-    /// FTS service lifecycle handle
-    #[cfg(feature = "fts")]
-    pub fts_service: ServiceHandle,
-
-    /// Graph service lifecycle handle
+    /// Graph backend slot (service lifecycle + graph data storage)
     #[cfg(feature = "graph")]
-    pub graph_service: ServiceHandle,
-
-    /// Graph data (populated when `graph_service` reaches `Ready`)
-    #[cfg(feature = "graph")]
-    pub graph_data: Arc<RwLock<Option<crate::graph::LoadedGraph>>>,
+    pub graph: BackendSlot<crate::graph::LoadedGraph>,
 
     /// Shared graph data for fabryk `GraphTools` (tokio RwLock).
     ///
     /// This is a separate reference to the graph data that uses `tokio::sync::RwLock`
     /// (required by `GraphTools::with_shared`). It is updated in lockstep with
-    /// `graph_data` whenever the graph is loaded or rebuilt.
+    /// `graph` whenever the graph is loaded or rebuilt.
     #[cfg(feature = "graph")]
     pub shared_graph: Arc<tokio::sync::RwLock<crate::graph::GraphData>>,
 
-    /// Vector service lifecycle handle
+    /// Vector backend slot (service lifecycle + vector backend storage)
     #[cfg(feature = "vector")]
-    pub vector_service: ServiceHandle,
-
-    /// Vector backend (populated when `vector_service` reaches `Ready`)
-    #[cfg(feature = "vector")]
-    pub vector_backend: Arc<RwLock<Option<Arc<dyn fabryk::vector::VectorBackend>>>>,
+    pub vector: BackendSlot<Arc<dyn fabryk::vector::VectorBackend>>,
 
     /// Shared vector slot for fabryk `SemanticSearchTools` (tokio RwLock).
     ///
-    /// This mirrors `vector_backend` but uses `tokio::sync::RwLock` as required
+    /// This mirrors `vector` but uses `tokio::sync::RwLock` as required
     /// by [`fabryk_mcp::semantic::VectorSlot`]. It is updated in lockstep with
-    /// `vector_backend` whenever the vector index finishes building.
+    /// `vector` whenever the vector index finishes building.
     #[cfg(feature = "vector")]
     pub vector_slot: fabryk_mcp::semantic::VectorSlot,
 }
@@ -112,19 +94,13 @@ impl AppState {
             config,
             simple_backend,
             #[cfg(feature = "fts")]
-            fts_backend: Arc::new(StdRwLock::new(None)),
-            #[cfg(feature = "fts")]
-            fts_service: ServiceHandle::new("fts"),
+            fts: BackendSlot::new("fts"),
             #[cfg(feature = "graph")]
-            graph_service: ServiceHandle::new("graph"),
-            #[cfg(feature = "graph")]
-            graph_data: Arc::new(RwLock::new(None)),
+            graph: BackendSlot::new("graph"),
             #[cfg(feature = "graph")]
             shared_graph: Arc::new(tokio::sync::RwLock::new(crate::graph::GraphData::new())),
             #[cfg(feature = "vector")]
-            vector_service: ServiceHandle::new("vector"),
-            #[cfg(feature = "vector")]
-            vector_backend: Arc::new(RwLock::new(None)),
+            vector: BackendSlot::new("vector"),
             #[cfg(feature = "vector")]
             vector_slot: Arc::new(tokio::sync::RwLock::new(None)),
         })
@@ -141,8 +117,8 @@ impl AppState {
     /// across requests.
     pub fn search_backend(&self) -> Arc<dyn SearchBackend + Send + Sync> {
         #[cfg(feature = "fts")]
-        if self.fts_service.state().is_ready() {
-            if let Ok(guard) = self.fts_backend.read() {
+        if self.fts.is_ready() {
+            if let Ok(guard) = self.fts.inner().read() {
                 if let Some(ref backend) = *guard {
                     return Arc::clone(backend) as Arc<dyn SearchBackend + Send + Sync>;
                 }
@@ -159,154 +135,12 @@ impl AppState {
     /// Returns "tantivy" if FTS is ready, otherwise "simple".
     pub fn active_backend_name(&self) -> &'static str {
         #[cfg(feature = "fts")]
-        if self.fts_service.state().is_ready() {
+        if self.fts.is_ready() {
             return "tantivy";
         }
         "simple"
     }
 
-    /// Check if FTS is ready (feature-gated).
-    ///
-    /// # Returns
-    ///
-    /// Returns true if FTS backend is initialized and ready for queries.
-    #[cfg(feature = "fts")]
-    pub fn is_fts_ready(&self) -> bool {
-        self.fts_service.state().is_ready()
-    }
-
-    /// Update the FTS backend after background indexing completes.
-    ///
-    /// # Arguments
-    ///
-    /// * `backend` - The newly built TantivySearch backend
-    ///
-    /// # Errors
-    ///
-    /// Returns `Err` if the write lock cannot be acquired.
-    #[cfg(feature = "fts")]
-    pub(crate) fn update_fts_backend(&self, backend: TantivySearch) -> Result<()> {
-        let mut guard = self
-            .fts_backend
-            .write()
-            .map_err(|_| crate::error::Error::config("Failed to acquire write lock".to_string()))?;
-        *guard = Some(Arc::new(backend));
-        Ok(())
-    }
-
-    /// Acquire the loaded graph data, returning an appropriate error if the
-    /// graph service is not in the `Ready` state.
-    ///
-    /// Callers receive a `RwLockReadGuard` that borrows `Option<LoadedGraph>`.
-    /// When the service is `Ready` the `Option` is guaranteed to be `Some`.
-    ///
-    /// # Errors
-    ///
-    /// Returns an error describing the current service state (not loaded,
-    /// loading, or failed).
-    #[cfg(feature = "graph")]
-    pub fn require_graph(
-        &self,
-    ) -> Result<std::sync::RwLockReadGuard<'_, Option<crate::graph::LoadedGraph>>> {
-        let svc_state = self.graph_service.state();
-        if !svc_state.is_ready() {
-            return match svc_state {
-                ServiceState::Starting => Err(crate::error::Error::not_found_msg(
-                    "Graph is currently loading",
-                )),
-                ServiceState::Failed(msg) => Err(crate::error::Error::config(format!(
-                    "Graph failed to load: {msg}"
-                ))),
-                _ => Err(crate::error::Error::not_found_msg("Graph not loaded yet")),
-            };
-        }
-        let guard = self.graph_data.read().unwrap();
-        Ok(guard)
-    }
-
-    /// Check if the vector index is ready for queries.
-    ///
-    /// # Returns
-    ///
-    /// Returns true if the vector service is in the `Ready` state.
-    #[cfg(feature = "vector")]
-    pub fn is_vector_ready(&self) -> bool {
-        self.vector_service.state().is_ready()
-    }
-
-    /// Mark the vector service as ready or stopped.
-    ///
-    /// Used by background vector building to signal when the index
-    /// becomes available.
-    #[cfg(feature = "vector")]
-    pub(crate) fn set_vector_ready(&self, ready: bool) {
-        if ready {
-            self.vector_service.set_state(ServiceState::Ready);
-        } else {
-            self.vector_service.set_state(ServiceState::Stopped);
-        }
-    }
-
-    /// Update the vector backend after background index building completes.
-    ///
-    /// # Arguments
-    ///
-    /// * `backend` - The newly built vector backend
-    ///
-    /// # Errors
-    ///
-    /// Returns `Err` if the write lock cannot be acquired.
-    #[cfg(feature = "vector")]
-    pub(crate) fn update_vector_backend(
-        &self,
-        backend: Arc<dyn fabryk::vector::VectorBackend>,
-    ) -> Result<()> {
-        {
-            let mut guard = self.vector_backend.write().map_err(|_| {
-                crate::error::Error::config("Failed to acquire vector write lock".to_string())
-            })?;
-            *guard = Some(Arc::clone(&backend));
-        }
-        // Also update the tokio-based vector slot used by SemanticSearchTools.
-        // `try_write()` is non-blocking and should always succeed here since
-        // there is no concurrent reader holding the lock during startup.
-        if let Ok(mut slot) = self.vector_slot.try_write() {
-            *slot = Some(backend);
-        } else {
-            log::warn!("Could not acquire vector_slot write lock; SemanticSearchTools may not see the new backend immediately");
-        }
-        Ok(())
-    }
-
-    /// Acquire a read-guard on the vector backend, returning an appropriate
-    /// error if the vector service is not in the `Ready` state.
-    ///
-    /// # Errors
-    ///
-    /// Returns an error describing the current service state (not built,
-    /// building, or failed).
-    #[cfg(feature = "vector")]
-    pub fn require_vector(
-        &self,
-    ) -> Result<std::sync::RwLockReadGuard<'_, Option<Arc<dyn fabryk::vector::VectorBackend>>>>
-    {
-        let svc_state = self.vector_service.state();
-        if !svc_state.is_ready() {
-            return match svc_state {
-                ServiceState::Starting => Err(crate::error::Error::not_found_msg(
-                    "Vector index is currently building",
-                )),
-                ServiceState::Failed(msg) => Err(crate::error::Error::config(format!(
-                    "Vector index failed to build: {msg}"
-                ))),
-                _ => Err(crate::error::Error::not_found_msg(
-                    "Vector index not built yet",
-                )),
-            };
-        }
-        let guard = self.vector_backend.read().unwrap();
-        Ok(guard)
-    }
 }
 
 /// Spawn an async task that loads or rebuilds the FTS index.
@@ -316,7 +150,7 @@ impl AppState {
 #[cfg(feature = "fts")]
 fn start_fts_loading(state: Arc<AppState>, needs_rebuild: bool) {
     tokio::spawn(async move {
-        state.fts_service.set_state(ServiceState::Starting);
+        state.fts.service().set_state(ServiceState::Starting);
 
         if needs_rebuild {
             // Build index from scratch
@@ -331,7 +165,8 @@ fn start_fts_loading(state: Arc<AppState>, needs_rebuild: bool) {
                 Err(e) => {
                     log::warn!("FTS indexing failed (graceful degradation): {}", e);
                     state
-                        .fts_service
+                        .fts
+                        .service()
                         .set_state(ServiceState::Degraded(format!("simple fallback: {e}")));
                     return;
                 }
@@ -342,7 +177,7 @@ fn start_fts_loading(state: Arc<AppState>, needs_rebuild: bool) {
         let fabryk_config = match crate::search::to_fabryk_search_config(&state.config.search) {
             Ok(c) => c,
             Err(e) => {
-                state.fts_service.set_state(ServiceState::Failed(format!(
+                state.fts.service().set_state(ServiceState::Failed(format!(
                     "Failed to resolve FTS config: {e}"
                 )));
                 return;
@@ -350,16 +185,16 @@ fn start_fts_loading(state: Arc<AppState>, needs_rebuild: bool) {
         };
         match TantivySearch::new(&fabryk_config) {
             Ok(backend) => {
-                if state.update_fts_backend(backend).is_ok() {
-                    state.fts_service.set_state(ServiceState::Ready);
+                if state.fts.set(Arc::new(backend)).is_ok() {
+                    state.fts.service().set_state(ServiceState::Ready);
                 } else {
-                    state.fts_service.set_state(ServiceState::Failed(
+                    state.fts.service().set_state(ServiceState::Failed(
                         "Failed to store FTS backend".to_string(),
                     ));
                 }
             }
             Err(e) => {
-                state.fts_service.set_state(ServiceState::Failed(format!(
+                state.fts.service().set_state(ServiceState::Failed(format!(
                     "Failed to load FTS index: {e}"
                 )));
             }
@@ -468,7 +303,7 @@ pub async fn initialize_graph(state: &Arc<AppState>) -> Result<()> {
 fn start_graph_loading(state: Arc<AppState>, data_dir: std::path::PathBuf) {
     tokio::spawn(async move {
         // Update state to Starting
-        state.graph_service.set_state(ServiceState::Starting);
+        state.graph.service().set_state(ServiceState::Starting);
 
         log::info!("Loading concept graph");
 
@@ -489,16 +324,19 @@ fn start_graph_loading(state: Arc<AppState>, data_dir: std::path::PathBuf) {
                 }
 
                 // Store graph data and mark service ready
-                {
-                    let mut guard = state.graph_data.write().unwrap();
-                    *guard = Some(loaded);
+                if state.graph.set(loaded).is_ok() {
+                    state.graph.service().set_state(ServiceState::Ready);
+                } else {
+                    state.graph.service().set_state(ServiceState::Failed(
+                        "Failed to store graph data".to_string(),
+                    ));
                 }
-                state.graph_service.set_state(ServiceState::Ready);
             }
             Err(e) => {
                 log::error!("Failed to load concept graph: {}", e);
                 state
-                    .graph_service
+                    .graph
+                    .service()
                     .set_state(ServiceState::Failed(e.to_string()));
             }
         }
@@ -546,27 +384,35 @@ pub async fn initialize_vector(state: &Arc<AppState>) -> Result<()> {
 #[cfg(feature = "vector")]
 fn start_vector_building(state: Arc<AppState>, cache_dir: std::path::PathBuf) {
     tokio::spawn(async move {
-        state.vector_service.set_state(ServiceState::Starting);
+        state.vector.service().set_state(ServiceState::Starting);
 
         match build_vector_index(&state.config, &cache_dir).await {
             Ok(backend) => {
                 use fabryk::vector::VectorBackend;
                 let doc_count = backend.document_count().unwrap_or(0);
                 let backend_arc: Arc<dyn fabryk::vector::VectorBackend> = Arc::new(backend);
-                if state.update_vector_backend(backend_arc).is_ok() {
-                    state.set_vector_ready(true);
+                if state.vector.set(Arc::clone(&backend_arc)).is_ok() {
+                    // Also update the tokio-based vector slot used by SemanticSearchTools.
+                    if let Ok(mut slot) = state.vector_slot.try_write() {
+                        *slot = Some(backend_arc);
+                    } else {
+                        log::warn!("Could not acquire vector_slot write lock; SemanticSearchTools may not see the new backend immediately");
+                    }
+                    state.vector.service().set_state(ServiceState::Ready);
                     log::info!(documents = doc_count; "Vector index ready");
                 } else {
                     log::error!("Failed to store vector backend");
                     state
-                        .vector_service
+                        .vector
+                        .service()
                         .set_state(ServiceState::Failed("Failed to store backend".to_string()));
                 }
             }
             Err(e) => {
                 log::warn!("Vector index build failed (graceful degradation): {}", e);
                 state
-                    .vector_service
+                    .vector
+                    .service()
                     .set_state(ServiceState::Failed(e.to_string()));
             }
         }
@@ -748,9 +594,9 @@ mod tests {
     async fn test_vector_service_initial_state() {
         let config = test_config("simple");
         let state = AppState::new(config).await.expect("Failed to create state");
-        assert_eq!(state.vector_service.state(), ServiceState::Stopped);
-        assert_eq!(state.vector_service.name(), "vector");
-        assert!(state.vector_backend.read().unwrap().is_none());
+        assert_eq!(state.vector.service().state(), ServiceState::Stopped);
+        assert_eq!(state.vector.service().name(), "vector");
+        assert!(state.vector.inner().read().unwrap().is_none());
     }
 
     #[tokio::test]
@@ -769,8 +615,8 @@ mod tests {
 
         let state = AppState::new(config).await.expect("Failed to create state");
         // Without existing index, FTS should not be ready
-        assert!(!state.is_fts_ready());
-        assert_eq!(state.fts_service.state(), ServiceState::Stopped);
+        assert!(!state.fts.is_ready());
+        assert_eq!(state.fts.service().state(), ServiceState::Stopped);
         assert_eq!(state.active_backend_name(), "simple");
     }
 
@@ -790,15 +636,15 @@ mod tests {
 
         let state = AppState::new(config).await.expect("Failed to create state");
 
-        assert!(!state.is_fts_ready());
+        assert!(!state.fts.is_ready());
 
-        state.fts_service.set_state(ServiceState::Ready);
-        assert!(state.is_fts_ready());
-        assert_eq!(state.fts_service.state(), ServiceState::Ready);
+        state.fts.service().set_state(ServiceState::Ready);
+        assert!(state.fts.is_ready());
+        assert_eq!(state.fts.service().state(), ServiceState::Ready);
 
-        state.fts_service.set_state(ServiceState::Stopped);
-        assert!(!state.is_fts_ready());
-        assert_eq!(state.fts_service.state(), ServiceState::Stopped);
+        state.fts.service().set_state(ServiceState::Stopped);
+        assert!(!state.fts.is_ready());
+        assert_eq!(state.fts.service().state(), ServiceState::Stopped);
     }
 
     #[tokio::test]
@@ -849,7 +695,7 @@ Test content.
         let backend = TantivySearch::new(&fabryk_config).expect("Failed to load index");
 
         // Update backend
-        let result = state.update_fts_backend(backend);
+        let result = state.fts.set(Arc::new(backend));
         assert!(result.is_ok());
     }
 
@@ -896,8 +742,8 @@ Test content.
         let fabryk_config = crate::search::to_fabryk_search_config(&config.search)
             .expect("Failed to resolve FTS config");
         let backend = TantivySearch::new(&fabryk_config).expect("Failed to load index");
-        state.update_fts_backend(backend).expect("Failed to update");
-        state.fts_service.set_state(ServiceState::Ready);
+        state.fts.set(Arc::new(backend)).expect("Failed to update");
+        state.fts.service().set_state(ServiceState::Ready);
 
         // Now search_backend should return FTS backend
         let _backend = state.search_backend();
@@ -924,7 +770,7 @@ Test content.
         assert_eq!(state.active_backend_name(), "simple");
 
         // After marking ready
-        state.fts_service.set_state(ServiceState::Ready);
+        state.fts.service().set_state(ServiceState::Ready);
         assert_eq!(state.active_backend_name(), "tantivy");
     }
 
@@ -1033,8 +879,8 @@ New content.
     async fn test_new_state_fts_not_ready_simple_backend() {
         let config = test_config("simple");
         let state = AppState::new(config).await.expect("Failed to create state");
-        assert!(!state.is_fts_ready());
-        assert_eq!(state.fts_service.state(), ServiceState::Stopped);
+        assert!(!state.fts.is_ready());
+        assert_eq!(state.fts.service().state(), ServiceState::Stopped);
     }
 
     #[tokio::test]
@@ -1047,8 +893,8 @@ New content.
         config.search.index_path = nonexistent_path.to_string_lossy().to_string();
 
         let state = AppState::new(config).await.expect("Failed to create state");
-        assert!(!state.is_fts_ready());
-        assert_eq!(state.fts_service.state(), ServiceState::Stopped);
+        assert!(!state.fts.is_ready());
+        assert_eq!(state.fts.service().state(), ServiceState::Stopped);
     }
 
     #[tokio::test]
@@ -1148,13 +994,13 @@ Test content.
 
         // Poll for FTS to become ready (async loading)
         let mut attempts = 0;
-        while !state.is_fts_ready() && attempts < 40 {
+        while !state.fts.is_ready() && attempts < 40 {
             sleep(Duration::from_millis(100)).await;
             attempts += 1;
         }
 
         assert!(
-            state.is_fts_ready(),
+            state.fts.is_ready(),
             "FTS should be ready after loading fresh index (waited {} ms)",
             attempts * 100
         );
@@ -1259,14 +1105,14 @@ Test content.
 
         // Poll for FTS to become ready
         let mut attempts = 0;
-        while !state.is_fts_ready() && attempts < 40 {
+        while !state.fts.is_ready() && attempts < 40 {
             sleep(Duration::from_millis(100)).await;
             attempts += 1;
         }
 
         // Check if FTS became ready
         assert!(
-            state.is_fts_ready(),
+            state.fts.is_ready(),
             "FTS should be ready after rebuild (waited {} ms)",
             attempts * 100
         );
@@ -1293,21 +1139,21 @@ Test content.
         let state = Arc::new(AppState::new(config).await.expect("Failed to create state"));
 
         // Verify initial state
-        assert!(!state.is_fts_ready());
+        assert!(!state.fts.is_ready());
 
         // Call start_fts_loading with rebuild (will succeed with 0 documents due to graceful degradation)
         start_fts_loading(Arc::clone(&state), true);
 
         // Poll for FTS to become ready (with timeout for CI environments)
         let mut attempts = 0;
-        while !state.is_fts_ready() && attempts < 40 {
+        while !state.fts.is_ready() && attempts < 40 {
             sleep(Duration::from_millis(100)).await;
             attempts += 1;
         }
 
         // Should become ready even with no documents (graceful degradation feature)
         assert!(
-            state.is_fts_ready(),
+            state.fts.is_ready(),
             "FTS should be ready after indexing empty directories (waited {} ms)",
             attempts * 100
         );
@@ -1317,12 +1163,12 @@ Test content.
     #[tokio::test]
     #[cfg(feature = "fts")]
     async fn test_search_backend_read_lock_fallback() {
-        // This tests the fallback path when fts_backend.read() succeeds but backend is None
+        // This tests the fallback path when fts.inner().read() succeeds but backend is None
         let config = test_config("tantivy");
         let state = AppState::new(config).await.expect("Failed to create state");
 
         // Set ready but don't actually set a backend
-        state.fts_service.set_state(ServiceState::Ready);
+        state.fts.service().set_state(ServiceState::Ready);
 
         // Should fall back to simple backend because backend is None
         let backend = state.search_backend();
@@ -1335,7 +1181,7 @@ Test content.
     async fn test_fts_service_handle_name() {
         let config = test_config("simple");
         let state = AppState::new(config).await.expect("Failed to create state");
-        assert_eq!(state.fts_service.name(), "fts");
+        assert_eq!(state.fts.service().name(), "fts");
     }
 
     #[tokio::test]
@@ -1343,9 +1189,9 @@ Test content.
     async fn test_graph_service_initial_state() {
         let config = test_config("simple");
         let state = AppState::new(config).await.expect("Failed to create state");
-        assert_eq!(state.graph_service.state(), ServiceState::Stopped);
-        assert_eq!(state.graph_service.name(), "graph");
-        assert!(state.graph_data.read().unwrap().is_none());
+        assert_eq!(state.graph.service().state(), ServiceState::Stopped);
+        assert_eq!(state.graph.service().name(), "graph");
+        assert!(state.graph.inner().read().unwrap().is_none());
     }
 
     #[tokio::test]
@@ -1353,9 +1199,9 @@ Test content.
     async fn test_require_graph_not_loaded() {
         let config = test_config("simple");
         let state = AppState::new(config).await.expect("Failed to create state");
-        let result = state.require_graph();
+        let result = state.graph.require();
         assert!(result.is_err());
-        assert!(result.unwrap_err().to_string().contains("not loaded"));
+        assert!(result.unwrap_err().to_string().contains("not initialized"));
     }
 
     #[tokio::test]
@@ -1363,10 +1209,10 @@ Test content.
     async fn test_require_graph_loading() {
         let config = test_config("simple");
         let state = AppState::new(config).await.expect("Failed to create state");
-        state.graph_service.set_state(ServiceState::Starting);
-        let result = state.require_graph();
+        state.graph.service().set_state(ServiceState::Starting);
+        let result = state.graph.require();
         assert!(result.is_err());
-        assert!(result.unwrap_err().to_string().contains("loading"));
+        assert!(result.unwrap_err().to_string().contains("currently initializing"));
     }
 
     #[tokio::test]
@@ -1375,9 +1221,10 @@ Test content.
         let config = test_config("simple");
         let state = AppState::new(config).await.expect("Failed to create state");
         state
-            .graph_service
+            .graph
+            .service()
             .set_state(ServiceState::Failed("disk full".to_string()));
-        let result = state.require_graph();
+        let result = state.graph.require();
         assert!(result.is_err());
         assert!(result.unwrap_err().to_string().contains("disk full"));
     }
@@ -1387,8 +1234,8 @@ Test content.
     async fn test_require_graph_ready_returns_guard() {
         let config = test_config("simple");
         let state = AppState::new(config).await.expect("Failed to create state");
-        state.graph_service.set_state(ServiceState::Ready);
-        let result = state.require_graph();
+        state.graph.service().set_state(ServiceState::Ready);
+        let result = state.graph.require();
         assert!(result.is_ok());
         // Guard should hold None since no graph data was actually loaded
         let guard = result.unwrap();
@@ -1411,7 +1258,7 @@ Test content.
         let result = initialize_graph(&state).await;
         assert!(result.is_ok());
         // Graph service should still be stopped since no graph file exists
-        assert_eq!(state.graph_service.state(), ServiceState::Stopped);
+        assert_eq!(state.graph.service().state(), ServiceState::Stopped);
     }
 
     #[tokio::test]
@@ -1440,7 +1287,7 @@ Test content.
 
         // Wait for async graph loading to complete (or fail)
         let mut attempts = 0;
-        while state.graph_service.state() == ServiceState::Stopped && attempts < 20 {
+        while state.graph.service().state() == ServiceState::Stopped && attempts < 20 {
             sleep(Duration::from_millis(50)).await;
             attempts += 1;
         }
@@ -1448,7 +1295,7 @@ Test content.
         sleep(Duration::from_millis(200)).await;
 
         // The graph service should be in Failed state due to invalid JSON
-        let svc_state = state.graph_service.state();
+        let svc_state = state.graph.service().state();
         assert!(
             matches!(svc_state, ServiceState::Failed(_)),
             "Expected Failed state, got {:?}",
@@ -1461,11 +1308,11 @@ Test content.
     async fn test_is_vector_ready() {
         let config = test_config("simple");
         let state = AppState::new(config).await.expect("Failed to create state");
-        assert!(!state.is_vector_ready());
-        state.set_vector_ready(true);
-        assert!(state.is_vector_ready());
-        state.set_vector_ready(false);
-        assert!(!state.is_vector_ready());
+        assert!(!state.vector.is_ready());
+        state.vector.service().set_state(ServiceState::Ready);
+        assert!(state.vector.is_ready());
+        state.vector.service().set_state(ServiceState::Stopped);
+        assert!(!state.vector.is_ready());
     }
 
     #[tokio::test]
@@ -1473,10 +1320,10 @@ Test content.
     async fn test_require_vector_not_ready() {
         let config = test_config("simple");
         let state = AppState::new(config).await.expect("Failed to create state");
-        let result = state.require_vector();
+        let result = state.vector.require();
         assert!(result.is_err());
         let err = result.err().unwrap();
-        assert!(err.to_string().contains("not built"));
+        assert!(err.to_string().contains("not initialized"));
     }
 
     #[tokio::test]
@@ -1484,11 +1331,11 @@ Test content.
     async fn test_require_vector_loading() {
         let config = test_config("simple");
         let state = AppState::new(config).await.expect("Failed to create state");
-        state.vector_service.set_state(ServiceState::Starting);
-        let result = state.require_vector();
+        state.vector.service().set_state(ServiceState::Starting);
+        let result = state.vector.require();
         assert!(result.is_err());
         let err = result.err().unwrap();
-        assert!(err.to_string().contains("building"));
+        assert!(err.to_string().contains("currently initializing"));
     }
 
     #[tokio::test]
@@ -1497,9 +1344,10 @@ Test content.
         let config = test_config("simple");
         let state = AppState::new(config).await.expect("Failed to create state");
         state
-            .vector_service
+            .vector
+            .service()
             .set_state(ServiceState::Failed("out of memory".to_string()));
-        let result = state.require_vector();
+        let result = state.vector.require();
         assert!(result.is_err());
         let err = result.err().unwrap();
         assert!(err.to_string().contains("out of memory"));
@@ -1510,8 +1358,8 @@ Test content.
     async fn test_require_vector_ready_returns_guard() {
         let config = test_config("simple");
         let state = AppState::new(config).await.expect("Failed to create state");
-        state.set_vector_ready(true);
-        let result = state.require_vector();
+        state.vector.service().set_state(ServiceState::Ready);
+        let result = state.vector.require();
         assert!(result.is_ok());
         // Guard should hold None since no vector backend was actually loaded
         let guard = result.unwrap();
@@ -1573,13 +1421,13 @@ Test content.
 
         // Poll for FTS to become ready
         let mut attempts = 0;
-        while !state.is_fts_ready() && attempts < 40 {
+        while !state.fts.is_ready() && attempts < 40 {
             sleep(Duration::from_millis(100)).await;
             attempts += 1;
         }
 
         assert!(
-            state.is_fts_ready(),
+            state.fts.is_ready(),
             "FTS should be ready after loading existing index (waited {} ms)",
             attempts * 100
         );
@@ -1640,13 +1488,13 @@ Test content.
 
         // Poll for FTS to become ready
         let mut attempts = 0;
-        while !state.is_fts_ready() && attempts < 40 {
+        while !state.fts.is_ready() && attempts < 40 {
             sleep(Duration::from_millis(100)).await;
             attempts += 1;
         }
 
         assert!(
-            state.is_fts_ready(),
+            state.fts.is_ready(),
             "FTS should be ready after loading existing index (waited {} ms)",
             attempts * 100
         );
@@ -1689,12 +1537,12 @@ Test content.
 
         // Toggle multiple times to exercise both branches repeatedly
         for _ in 0..3 {
-            state.fts_service.set_state(ServiceState::Ready);
-            assert!(state.is_fts_ready());
+            state.fts.service().set_state(ServiceState::Ready);
+            assert!(state.fts.is_ready());
             assert_eq!(state.active_backend_name(), "tantivy");
 
-            state.fts_service.set_state(ServiceState::Stopped);
-            assert!(!state.is_fts_ready());
+            state.fts.service().set_state(ServiceState::Stopped);
+            assert!(!state.fts.is_ready());
             assert_eq!(state.active_backend_name(), "simple");
         }
     }
@@ -1715,22 +1563,23 @@ Test content.
         let state = AppState::new(config).await.expect("Failed to create state");
 
         // Initial state should be Stopped
-        assert_eq!(state.fts_service.state(), ServiceState::Stopped);
+        assert_eq!(state.fts.service().state(), ServiceState::Stopped);
 
         // Transition to Starting
-        state.fts_service.set_state(ServiceState::Starting);
-        assert!(!state.is_fts_ready());
+        state.fts.service().set_state(ServiceState::Starting);
+        assert!(!state.fts.is_ready());
         assert_eq!(state.active_backend_name(), "simple");
 
         // Transition to Ready
-        state.fts_service.set_state(ServiceState::Ready);
-        assert!(state.is_fts_ready());
+        state.fts.service().set_state(ServiceState::Ready);
+        assert!(state.fts.is_ready());
 
         // Transition to Failed
         state
-            .fts_service
+            .fts
+            .service()
             .set_state(ServiceState::Failed("test error".to_string()));
-        assert!(!state.is_fts_ready());
+        assert!(!state.fts.is_ready());
         assert_eq!(state.active_backend_name(), "simple");
     }
 
@@ -1741,28 +1590,29 @@ Test content.
         let state = AppState::new(config).await.expect("Failed to create state");
 
         // Stopped -> Starting -> Ready -> Failed -> Stopped
-        assert_eq!(state.graph_service.state(), ServiceState::Stopped);
+        assert_eq!(state.graph.service().state(), ServiceState::Stopped);
 
-        state.graph_service.set_state(ServiceState::Starting);
-        let result = state.require_graph();
+        state.graph.service().set_state(ServiceState::Starting);
+        let result = state.graph.require();
         assert!(result.is_err());
-        assert!(result.unwrap_err().to_string().contains("loading"));
+        assert!(result.unwrap_err().to_string().contains("currently initializing"));
 
-        state.graph_service.set_state(ServiceState::Ready);
-        let result = state.require_graph();
+        state.graph.service().set_state(ServiceState::Ready);
+        let result = state.graph.require();
         assert!(result.is_ok());
 
         state
-            .graph_service
+            .graph
+            .service()
             .set_state(ServiceState::Failed("test failure".to_string()));
-        let result = state.require_graph();
+        let result = state.graph.require();
         assert!(result.is_err());
         assert!(result.unwrap_err().to_string().contains("test failure"));
 
-        state.graph_service.set_state(ServiceState::Stopped);
-        let result = state.require_graph();
+        state.graph.service().set_state(ServiceState::Stopped);
+        let result = state.graph.require();
         assert!(result.is_err());
-        assert!(result.unwrap_err().to_string().contains("not loaded"));
+        assert!(result.unwrap_err().to_string().contains("not initialized"));
     }
 
     #[tokio::test]
@@ -1772,30 +1622,31 @@ Test content.
         let state = AppState::new(config).await.expect("Failed to create state");
 
         // Stopped -> Starting -> Ready -> Failed -> Stopped
-        assert!(!state.is_vector_ready());
+        assert!(!state.vector.is_ready());
 
-        state.vector_service.set_state(ServiceState::Starting);
-        let result = state.require_vector();
+        state.vector.service().set_state(ServiceState::Starting);
+        let result = state.vector.require();
         let err = result.err().expect("should be err when Starting");
-        assert!(err.to_string().contains("building"));
+        assert!(err.to_string().contains("currently initializing"));
 
-        state.set_vector_ready(true);
-        assert!(state.is_vector_ready());
-        let result = state.require_vector();
+        state.vector.service().set_state(ServiceState::Ready);
+        assert!(state.vector.is_ready());
+        let result = state.vector.require();
         assert!(result.is_ok());
 
         state
-            .vector_service
+            .vector
+            .service()
             .set_state(ServiceState::Failed("oom".to_string()));
-        assert!(!state.is_vector_ready());
-        let result = state.require_vector();
+        assert!(!state.vector.is_ready());
+        let result = state.vector.require();
         let err = result.err().expect("should be err when Failed");
         assert!(err.to_string().contains("oom"));
 
-        state.set_vector_ready(false);
-        assert!(!state.is_vector_ready());
-        let result = state.require_vector();
+        state.vector.service().set_state(ServiceState::Stopped);
+        assert!(!state.vector.is_ready());
+        let result = state.vector.require();
         let err = result.err().expect("should be err when not built");
-        assert!(err.to_string().contains("not built"));
+        assert!(err.to_string().contains("not initialized"));
     }
 }
