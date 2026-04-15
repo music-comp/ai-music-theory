@@ -11,7 +11,7 @@ use serde_json::{json, Value};
 use fabryk_mcp::{
     model::{ErrorCode, ErrorData, Tool},
     make_tool, serialize_response,
-    CompositeRegistry, FabrykMcpServer, McpErrorContextExt, ToolRegistry, ToolResult,
+    FabrykMcpServer, McpErrorContextExt, ToolRegistry, ToolResult,
 };
 
 use crate::state::AppState;
@@ -1041,26 +1041,14 @@ pub fn build_server(state: AppState) -> FabrykMcpServer {
         }),
     });
 
-    #[allow(unused_mut)]
-    let mut registry = CompositeRegistry::new()
-        .add(concept_tools)
-        .add(guide_tools)
-        .add(source_tools)
-        .add(search_tools)
-        .add(semantic_search)
-        .add(question_search)
-        .add(health_tools)
-        .add(music_theory_tools)
-        .add(oth_tools);
-
-    // ---- Graph tools (17 tools, replacing the former 16-tool GraphToolsRegistry) ----
+    // ---- Graph tools (17 tools) ----
     //
     // The shared_graph field provides an Arc<tokio::sync::RwLock<GraphData>> that
     // starts empty and is populated when the graph finishes loading asynchronously.
     // GraphTools reads from this lock on every tool call, so it transparently
     // picks up the graph data once available.
     #[cfg(feature = "graph")]
-    {
+    let graph_tools = {
         let node_filter = Arc::new(
             fabryk_mcp::graph::MetadataNodeFilter::new()
                 .with_exact("tier", "tier")
@@ -1167,8 +1155,8 @@ pub fn build_server(state: AppState) -> FabrykMcpServer {
             .with_extra_schema(GraphTools::SLOT_CENTRALITY, extra.clone())
             .with_extra_schema(GraphTools::SLOT_LEARNING_PATH, extra);
 
-        registry = registry.add(graph_tools);
-    }
+        graph_tools
+    };
 
     let skill_docs_path = state
         .config
@@ -1176,7 +1164,31 @@ pub fn build_server(state: AppState) -> FabrykMcpServer {
         .skill_docs_path()
         .unwrap_or_else(|_| std::path::PathBuf::from("."));
 
-    let resources = fabryk_mcp::StaticResources::new(skill_docs_path)
+    #[allow(unused_mut)]
+    let mut builder = fabryk_mcp::ServerBuilder::new()
+        .name(&state.config.server.name)
+        .version(&state.config.server.version)
+        .description(
+            "Music Theory AI Skill - Access comprehensive music theory materials \
+             including source texts, concept cards, and topic guides.",
+        )
+        .resources_path(skill_docs_path)
+        .add(concept_tools)
+        .add(guide_tools)
+        .add(source_tools)
+        .add(search_tools)
+        .add(semantic_search)
+        .add(question_search)
+        .add(health_tools)
+        .add(music_theory_tools)
+        .add(oth_tools);
+
+    #[cfg(feature = "graph")]
+    {
+        builder = builder.add(graph_tools);
+    }
+
+    builder
         .with_resource(fabryk_mcp::StaticResourceDef {
             uri: "skill://conventions".into(),
             name: "Music Theory Conventions".into(),
@@ -1208,16 +1220,8 @@ pub fn build_server(state: AppState) -> FabrykMcpServer {
             mime_type: "text/markdown".into(),
             filename: "INDEX.md".into(),
             fallback: Some(crate::resources::default_index()),
-        });
-
-    FabrykMcpServer::new(registry)
-        .with_name(&state.config.server.name)
-        .with_version(&state.config.server.version)
-        .with_description(
-            "Music Theory AI Skill - Access comprehensive music theory materials \
-             including source texts, concept cards, and topic guides.",
-        )
-        .with_resources(resources)
+        })
+        .build()
 }
 
 // ============================================================================
