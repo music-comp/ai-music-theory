@@ -7,13 +7,12 @@ use std::sync::Arc;
 
 use clap::{Parser, Subcommand};
 use fabryk::core::ConfigManager;
-use fabryk_cli::ConfigAction;
+use fabryk_cli::{CacheAction, CacheCommand, ConfigAction, SourcesCommand};
 
 use crate::config::Config;
 use crate::error::Result;
 use crate::server::build_server;
 use crate::state::AppState;
-use fabryk_cli::SourcesCommand;
 
 #[cfg(feature = "fts")]
 use crate::search::{build_index, is_index_fresh, IndexMetadata};
@@ -89,7 +88,7 @@ pub enum Commands {
     Sources(SourcesCommand),
 
     /// Cache management (download pre-built indexes, package for distribution)
-    Cache(CacheCommands),
+    Cache(CacheCommand),
 }
 
 /// Graph subcommands
@@ -146,42 +145,6 @@ pub enum VectordbSubcommand {
 
     /// Show vector index status
     Status,
-}
-
-/// Cache management subcommands.
-#[derive(Parser)]
-pub struct CacheCommands {
-    #[command(subcommand)]
-    command: CacheSubcommand,
-}
-
-/// Cache command operations.
-#[derive(Subcommand)]
-pub enum CacheSubcommand {
-    /// Download pre-built caches from GitHub releases
-    Download {
-        /// Which cache to download (graph, fts, vector, all)
-        #[arg(default_value = "all")]
-        backend: String,
-
-        /// Force re-download even if cache exists at current version
-        #[arg(long, short)]
-        force: bool,
-    },
-
-    /// Show status of local caches
-    Status,
-
-    /// Package local caches for distribution (CI use)
-    Package {
-        /// Which cache to package (graph, fts, vector, all)
-        #[arg(default_value = "all")]
-        backend: String,
-
-        /// Output directory for archives
-        #[arg(long, short, default_value = "./dist")]
-        output: String,
-    },
 }
 
 /// Handle the CLI command.
@@ -268,7 +231,7 @@ pub async fn handle_command(cli: Cli) -> Result<()> {
             .await
         }
 
-        Commands::Cache(cache_cmds) => handle_cache_command(cache_cmds, log_level).await,
+        Commands::Cache(cache_cmd) => handle_cache_command(cache_cmd, log_level).await,
     }
 }
 
@@ -767,27 +730,27 @@ async fn handle_vectordb_command(
 
 /// Handle cache subcommand.
 async fn handle_cache_command(
-    cache_cmds: CacheCommands,
+    cache_cmd: CacheCommand,
     log_level_override: Option<String>,
 ) -> Result<()> {
     let config = Config::load()?;
     let opts = apply_log_level_override(&config.logging, log_level_override)?;
     let _ = twyg::setup(opts);
 
-    match cache_cmds.command {
-        CacheSubcommand::Download { backend, force } => {
+    match cache_cmd.command {
+        CacheAction::Download { backend, force } => {
             let backends = crate::cache::parse_backend_arg(&backend)?;
             for b in &backends {
                 crate::cache::download_project_cache(b, &config, force)?;
             }
             Ok(())
         }
-        CacheSubcommand::Status => {
+        CacheAction::Status => {
             let report = crate::cache::cache_status(&config)?;
             println!("{report}");
             Ok(())
         }
-        CacheSubcommand::Package { backend, output } => {
+        CacheAction::Package { backend, output } => {
             let backends = crate::cache::parse_backend_arg(&backend)?;
             let output_dir = std::path::PathBuf::from(output);
             for b in &backends {
