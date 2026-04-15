@@ -117,15 +117,16 @@ impl AppState {
     /// across requests.
     pub fn search_backend(&self) -> Arc<dyn SearchBackend + Send + Sync> {
         #[cfg(feature = "fts")]
-        if self.fts.is_ready() {
-            if let Ok(guard) = self.fts.inner().read() {
-                if let Some(ref backend) = *guard {
-                    return Arc::clone(backend) as Arc<dyn SearchBackend + Send + Sync>;
-                }
-            }
+        {
+            return fabryk_mcp::resolve_search_backend(
+                Some(&self.fts),
+                &(Arc::clone(&self.simple_backend) as Arc<dyn SearchBackend + Send + Sync>),
+            );
         }
-
-        Arc::clone(&self.simple_backend) as Arc<dyn SearchBackend + Send + Sync>
+        #[cfg(not(feature = "fts"))]
+        {
+            Arc::clone(&self.simple_backend) as Arc<dyn SearchBackend + Send + Sync>
+        }
     }
 
     /// Get the name of the currently active backend.
@@ -135,10 +136,13 @@ impl AppState {
     /// Returns "tantivy" if FTS is ready, otherwise "simple".
     pub fn active_backend_name(&self) -> &'static str {
         #[cfg(feature = "fts")]
-        if self.fts.is_ready() {
-            return "tantivy";
+        {
+            return fabryk_mcp::resolve_backend_name(Some(&self.fts));
         }
-        "simple"
+        #[cfg(not(feature = "fts"))]
+        {
+            "simple"
+        }
     }
 }
 
