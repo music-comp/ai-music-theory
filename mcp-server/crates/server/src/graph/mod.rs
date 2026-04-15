@@ -113,7 +113,8 @@ pub fn source_is_converted(node: &fabryk::graph::Node) -> bool {
 
 /// Convert a relationship name string to a fabryk `Relationship`.
 pub fn to_fabryk_relationship(name: &str) -> fabryk::graph::Relationship {
-    name.parse().unwrap_or_else(|_| fabryk::graph::Relationship::Custom(name.to_string()))
+    name.parse()
+        .unwrap_or_else(|_| fabryk::graph::Relationship::Custom(name.to_string()))
 }
 
 /// Convert a fabryk `Relationship` to a PascalCase display string.
@@ -794,8 +795,14 @@ mod tests {
 
         assert_eq!(loaded.stats.node_count, 2);
         assert_eq!(loaded.stats.edge_count, 1);
-        assert_eq!(loaded.stats.type_counts.get("domain").copied().unwrap_or(0), 1);
-        assert_eq!(loaded.stats.type_counts.get("source").copied().unwrap_or(0), 1);
+        assert_eq!(
+            loaded.stats.type_counts.get("domain").copied().unwrap_or(0),
+            1
+        );
+        assert_eq!(
+            loaded.stats.type_counts.get("source").copied().unwrap_or(0),
+            1
+        );
         assert!(loaded.data.contains_node("concept-a"));
         assert!(loaded.data.contains_node("source-1"));
     }
@@ -1190,8 +1197,14 @@ mod tests {
         let loaded = load_concept_graph(temp_dir.path()).await.expect("load");
         assert_eq!(loaded.stats.node_count, 0);
         assert_eq!(loaded.stats.edge_count, 0);
-        assert_eq!(loaded.stats.type_counts.get("domain").copied().unwrap_or(0), 0);
-        assert_eq!(loaded.stats.type_counts.get("source").copied().unwrap_or(0), 0);
+        assert_eq!(
+            loaded.stats.type_counts.get("domain").copied().unwrap_or(0),
+            0
+        );
+        assert_eq!(
+            loaded.stats.type_counts.get("source").copied().unwrap_or(0),
+            0
+        );
     }
 
     // -----------------------------------------------------------------------
@@ -1390,8 +1403,14 @@ mod tests {
 
         assert_eq!(loaded.stats.node_count, 5);
         assert_eq!(loaded.stats.edge_count, 3);
-        assert_eq!(loaded.stats.type_counts.get("domain").copied().unwrap_or(0), 2);
-        assert_eq!(loaded.stats.type_counts.get("source").copied().unwrap_or(0), 2);
+        assert_eq!(
+            loaded.stats.type_counts.get("domain").copied().unwrap_or(0),
+            2
+        );
+        assert_eq!(
+            loaded.stats.type_counts.get("source").copied().unwrap_or(0),
+            2
+        );
     }
 
     // -----------------------------------------------------------------------
@@ -1651,8 +1670,14 @@ mod tests {
         fabryk::graph::save_graph(&data, &graph_path, None).expect("save");
 
         let loaded = load_concept_graph(temp_dir.path()).await.expect("load");
-        assert_eq!(loaded.stats.type_counts.get("domain").copied().unwrap_or(0), 0);
-        assert_eq!(loaded.stats.type_counts.get("source").copied().unwrap_or(0), 2);
+        assert_eq!(
+            loaded.stats.type_counts.get("domain").copied().unwrap_or(0),
+            0
+        );
+        assert_eq!(
+            loaded.stats.type_counts.get("source").copied().unwrap_or(0),
+            2
+        );
         assert_eq!(loaded.stats.node_count, 2);
     }
 
@@ -1829,8 +1854,14 @@ mod tests {
 
         assert_eq!(loaded.stats.node_count, 2);
         assert_eq!(loaded.stats.edge_count, 1);
-        assert_eq!(loaded.stats.type_counts.get("domain").copied().unwrap_or(0), 1);
-        assert_eq!(loaded.stats.type_counts.get("source").copied().unwrap_or(0), 1);
+        assert_eq!(
+            loaded.stats.type_counts.get("domain").copied().unwrap_or(0),
+            1
+        );
+        assert_eq!(
+            loaded.stats.type_counts.get("source").copied().unwrap_or(0),
+            1
+        );
         assert_eq!(loaded.loaded_at, loaded_at);
         assert!(loaded.data.contains_node("a"));
         assert!(loaded.data.contains_node("s"));

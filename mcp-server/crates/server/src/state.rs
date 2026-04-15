@@ -118,10 +118,10 @@ impl AppState {
     pub fn search_backend(&self) -> Arc<dyn SearchBackend + Send + Sync> {
         #[cfg(feature = "fts")]
         {
-            return fabryk_mcp::resolve_search_backend(
+            fabryk_mcp::resolve_search_backend(
                 Some(&self.fts),
                 &(Arc::clone(&self.simple_backend) as Arc<dyn SearchBackend + Send + Sync>),
-            );
+            )
         }
         #[cfg(not(feature = "fts"))]
         {
@@ -137,7 +137,7 @@ impl AppState {
     pub fn active_backend_name(&self) -> &'static str {
         #[cfg(feature = "fts")]
         {
-            return fabryk_mcp::resolve_backend_name(Some(&self.fts));
+            fabryk_mcp::resolve_backend_name(Some(&self.fts))
         }
         #[cfg(not(feature = "fts"))]
         {
@@ -949,21 +949,30 @@ Test content.
         // Check total indexed and per-label counts
         assert_eq!(stats.documents_indexed, 1);
         assert_eq!(
-            stats.label_counts.get("concept_cards").copied().unwrap_or(0),
+            stats
+                .label_counts
+                .get("concept_cards")
+                .copied()
+                .unwrap_or(0),
             1
         );
         assert_eq!(
-            stats.label_counts.get("source_chapters").copied().unwrap_or(0),
+            stats
+                .label_counts
+                .get("source_chapters")
+                .copied()
+                .unwrap_or(0),
             0
         );
         assert_eq!(
-            stats.label_counts.get("unified_concepts").copied().unwrap_or(0),
+            stats
+                .label_counts
+                .get("unified_concepts")
+                .copied()
+                .unwrap_or(0),
             0
         );
-        assert_eq!(
-            stats.label_counts.get("guides").copied().unwrap_or(0),
-            0
-        );
+        assert_eq!(stats.label_counts.get("guides").copied().unwrap_or(0), 0);
     }
 
     #[tokio::test]

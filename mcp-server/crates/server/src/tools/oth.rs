@@ -14,11 +14,10 @@ use music_comp_mt::note::Pitch;
 use music_comp_mt::quartal::{QuartalIntervalStructure, QuartalOrbit};
 use music_comp_mt::quintal::{
     all_modes, betweenness_centrality, chord_scale, classify_orbit, crossroads_chords, diameter,
-    distance, fiber_class, inversion_cycle, l1_distance, modes_by_opening_interval,
-    orbit_modes, parent_scales, step_vocabulary_cluster,
-    verify_all_orbits_self_dual, verify_universal_l1_law, BaseSpace, FiberClass,
-    IntervalStructure, Orbit, OthMode, ParentScale, PcChord,
-    StepVocabularyCluster, VoicedChord, transpose,
+    distance, fiber_class, inversion_cycle, l1_distance, modes_by_opening_interval, orbit_modes,
+    parent_scales, step_vocabulary_cluster, transpose, verify_all_orbits_self_dual,
+    verify_universal_l1_law, BaseSpace, FiberClass, IntervalStructure, Orbit, OthMode, ParentScale,
+    PcChord, StepVocabularyCluster, VoicedChord,
 };
 use music_comp_mt::set_class::PitchClassSet;
 
@@ -159,10 +158,7 @@ fn parse_chord_pcs(pcs: Vec<u8>) -> Result<PcChord> {
     PcChord::new(arr).map_err(|e| Error::parse(format!("Invalid pitch classes: {}", e)))
 }
 
-fn parse_chord_input(
-    pcs: Option<Vec<u8>>,
-    notes: Option<Vec<String>>,
-) -> Result<PcChord> {
+fn parse_chord_input(pcs: Option<Vec<u8>>, notes: Option<Vec<String>>) -> Result<PcChord> {
     match (pcs, notes) {
         (Some(pcs), _) => parse_chord_pcs(pcs),
         (None, Some(notes)) => {
@@ -290,7 +286,10 @@ fn build_mode_info(mode: &OthMode) -> ModeInfo {
         rotation: mode.rotation(),
         steps: mode.steps().to_vec(),
         pcs_from_c: pcs.to_vec(),
-        spelled_from_c: pcs.iter().map(|&pc| pc_to_note_name(pc).to_string()).collect(),
+        spelled_from_c: pcs
+            .iter()
+            .map(|&pc| pc_to_note_name(pc).to_string())
+            .collect(),
         opening_interval: mode.opening_interval(),
         opening_interval_name: interval_name(mode.opening_interval()).to_string(),
     }
@@ -315,7 +314,11 @@ fn build_chord_summary(chord: &PcChord) -> ChordSummary {
         .unwrap_or_else(|| "none".to_string());
     ChordSummary {
         pcs: chord.pcs().to_vec(),
-        notes: chord.pcs().iter().map(|&pc| pc_to_note_name(pc).to_string()).collect(),
+        notes: chord
+            .pcs()
+            .iter()
+            .map(|&pc| pc_to_note_name(pc).to_string())
+            .collect(),
         orbit,
     }
 }
@@ -341,11 +344,7 @@ fn compute_voice_movement(from: &PcChord, to: &PcChord) -> Result<VoiceMovement>
     let old = old_pc.ok_or_else(|| Error::parse("Chords are identical".to_string()))?;
     let new = new_pc.ok_or_else(|| Error::parse("Chords are identical".to_string()))?;
     let voice = from_pcs.iter().position(|&p| p == old).unwrap() as u8;
-    let direction = if (old + 1) % 12 == new {
-        "up"
-    } else {
-        "down"
-    };
+    let direction = if (old + 1) % 12 == new { "up" } else { "down" };
 
     Ok(VoiceMovement {
         voice,
@@ -367,11 +366,18 @@ fn build_full_orbit_info(orbit: &Orbit) -> FullOrbitInfo {
 
     FullOrbitInfo {
         orbit: build_orbit_object(orbit),
-        step_sequence: om.modes().first().map(|m| m.steps().to_vec()).unwrap_or_default(),
+        step_sequence: om
+            .modes()
+            .first()
+            .map(|m| m.steps().to_vec())
+            .unwrap_or_default(),
         step_size_multiset: om.step_size_multiset().to_vec(),
         modes: om.modes().iter().map(build_mode_info).collect(),
         distinct_mode_count: om.distinct_count(),
-        parent_scales: parent_scale_list.iter().map(build_parent_scale_info).collect(),
+        parent_scales: parent_scale_list
+            .iter()
+            .map(build_parent_scale_info)
+            .collect(),
     }
 }
 
@@ -517,7 +523,10 @@ pub struct GetOthChordInfoResponse {
 pub fn get_oth_chord_info(args: GetOthChordInfoArgs) -> Result<GetOthChordInfoResponse> {
     let chord = parse_chord_input(args.pcs, args.notes)?;
     let pcs = chord.pcs();
-    let notes: Vec<String> = pcs.iter().map(|&pc| pc_to_note_name(pc).to_string()).collect();
+    let notes: Vec<String> = pcs
+        .iter()
+        .map(|&pc| pc_to_note_name(pc).to_string())
+        .collect();
     // interval_structure() returns Option — None for degenerate chords
     let intervals = chord
         .interval_structure()
@@ -536,8 +545,11 @@ pub fn get_oth_chord_info(args: GetOthChordInfoArgs) -> Result<GetOthChordInfoRe
         None => {
             let reason = if let Some(is) = chord.interval_structure() {
                 let ivals = is.intervals();
-                let outside: Vec<u8> =
-                    ivals.iter().filter(|&&i| !(6..=8).contains(&i)).copied().collect();
+                let outside: Vec<u8> = ivals
+                    .iter()
+                    .filter(|&&i| !(6..=8).contains(&i))
+                    .copied()
+                    .collect();
                 format!(
                     "Interval structure {:?} contains intervals outside {{6,7,8}}: {:?}",
                     ivals, outside
@@ -617,7 +629,12 @@ pub fn get_oth_chord_scale(args: GetOthChordScaleArgs) -> Result<GetOthChordScal
             args.pitches.len()
         )));
     }
-    let pitches: [u8; 4] = [args.pitches[0], args.pitches[1], args.pitches[2], args.pitches[3]];
+    let pitches: [u8; 4] = [
+        args.pitches[0],
+        args.pitches[1],
+        args.pitches[2],
+        args.pitches[3],
+    ];
     let vc = VoicedChord::new(pitches)
         .map_err(|e| Error::parse(format!("Invalid voiced chord: {}", e)))?;
 
@@ -636,7 +653,11 @@ pub fn get_oth_chord_scale(args: GetOthChordScaleArgs) -> Result<GetOthChordScal
     // Build chord scale info
     let cs_info = ChordScaleInfo {
         pcs: cs.pcs.to_vec(),
-        notes: cs.pcs.iter().map(|&pc| pc_to_note_name(pc).to_string()).collect(),
+        notes: cs
+            .pcs
+            .iter()
+            .map(|&pc| pc_to_note_name(pc).to_string())
+            .collect(),
         steps: cs.steps.to_vec(),
     };
 
@@ -757,7 +778,10 @@ fn build_mode_with_orbit(mode: &OthMode) -> ModeObjectWithOrbit {
         rotation: mode.rotation(),
         steps: mode.steps().to_vec(),
         pcs_from_c: pcs.to_vec(),
-        spelled_from_c: pcs.iter().map(|&pc| pc_to_note_name(pc).to_string()).collect(),
+        spelled_from_c: pcs
+            .iter()
+            .map(|&pc| pc_to_note_name(pc).to_string())
+            .collect(),
         opening_interval: mode.opening_interval(),
         opening_interval_name: interval_name(mode.opening_interval()).to_string(),
         step_cluster: format!("{:?}", cluster),
@@ -803,7 +827,8 @@ pub fn list_oth_modes(args: ListOthModesArgs) -> Result<ListOthModesResponse> {
     }
 
     let filtered_count = modes.len();
-    let mode_objs: Vec<ModeObjectWithOrbit> = modes.iter().map(|m| build_mode_with_orbit(m)).collect();
+    let mode_objs: Vec<ModeObjectWithOrbit> =
+        modes.iter().map(|m| build_mode_with_orbit(m)).collect();
 
     let filter_val = if filter.is_empty() {
         serde_json::Value::Null
@@ -902,9 +927,9 @@ pub fn get_oth_neighbors(args: GetOthNeighborsArgs) -> Result<GetOthNeighborsRes
     let chord = parse_chord_input(args.pcs, args.notes)?;
     let space = get_space();
 
-    let neighbor_indices = space.neighbors(&chord).ok_or_else(|| {
-        Error::parse("Chord is not in the [6,8] base space".to_string())
-    })?;
+    let neighbor_indices = space
+        .neighbors(&chord)
+        .ok_or_else(|| Error::parse("Chord is not in the [6,8] base space".to_string()))?;
 
     let degree = neighbor_indices.len();
     let chords = space.chords();
@@ -924,7 +949,11 @@ pub fn get_oth_neighbors(args: GetOthNeighborsArgs) -> Result<GetOthNeighborsRes
         let movement = compute_voice_movement(&chord, neighbor)?;
         all_neighbors.push(NeighborInfo {
             pcs: neighbor.pcs().to_vec(),
-            notes: neighbor.pcs().iter().map(|&pc| pc_to_note_name(pc).to_string()).collect(),
+            notes: neighbor
+                .pcs()
+                .iter()
+                .map(|&pc| pc_to_note_name(pc).to_string())
+                .collect(),
             orbit: orbit_label,
             voice_moved: movement.voice,
             direction: movement.direction,
@@ -1223,11 +1252,19 @@ pub fn get_oth_crossroads(_args: GetOthCrossroadsArgs) -> Result<GetOthCrossroad
 
             CrossroadsChordInfo {
                 pcs: chord.pcs().to_vec(),
-                notes: chord.pcs().iter().map(|&pc| pc_to_note_name(pc).to_string()).collect(),
+                notes: chord
+                    .pcs()
+                    .iter()
+                    .map(|&pc| pc_to_note_name(pc).to_string())
+                    .collect(),
                 degree: deg,
                 betweenness_centrality: bc,
                 t6_partner_pcs: t6.pcs().to_vec(),
-                t6_partner_notes: t6.pcs().iter().map(|&pc| pc_to_note_name(pc).to_string()).collect(),
+                t6_partner_notes: t6
+                    .pcs()
+                    .iter()
+                    .map(|&pc| pc_to_note_name(pc).to_string())
+                    .collect(),
                 is_self_t6,
             }
         })
@@ -1291,8 +1328,7 @@ pub fn find_oth_modes_by_opening(
 
     for i in intervals {
         let modes = modes_by_opening_interval(i);
-        let mode_objs: Vec<ModeObjectWithOrbit> =
-            modes.iter().map(build_mode_with_orbit).collect();
+        let mode_objs: Vec<ModeObjectWithOrbit> = modes.iter().map(build_mode_with_orbit).collect();
         let count = mode_objs.len();
         total += count;
         groups.insert(
@@ -1820,20 +1856,16 @@ mod tests {
 
     #[test]
     fn test_find_modes_by_opening_all() {
-        let result = find_oth_modes_by_opening(FindOthModesByOpeningArgs {
-            interval: None,
-        })
-        .unwrap();
+        let result =
+            find_oth_modes_by_opening(FindOthModesByOpeningArgs { interval: None }).unwrap();
         assert_eq!(result.opening_intervals.len(), 6);
         assert_eq!(result.total_modes, 52);
     }
 
     #[test]
     fn test_find_modes_by_opening_specific() {
-        let result = find_oth_modes_by_opening(FindOthModesByOpeningArgs {
-            interval: Some(6),
-        })
-        .unwrap();
+        let result =
+            find_oth_modes_by_opening(FindOthModesByOpeningArgs { interval: Some(6) }).unwrap();
         assert_eq!(result.opening_intervals.len(), 1);
         let group = &result.opening_intervals["6"];
         assert_eq!(group.name, "tritone");
@@ -1842,9 +1874,8 @@ mod tests {
 
     #[test]
     fn test_find_modes_by_opening_invalid() {
-        assert!(find_oth_modes_by_opening(FindOthModesByOpeningArgs {
-            interval: Some(7),
-        })
-        .is_err());
+        assert!(
+            find_oth_modes_by_opening(FindOthModesByOpeningArgs { interval: Some(7) }).is_err()
+        );
     }
 }

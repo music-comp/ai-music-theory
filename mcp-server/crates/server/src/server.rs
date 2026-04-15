@@ -9,9 +9,9 @@ use std::sync::Arc;
 use serde_json::{json, Value};
 
 use fabryk_mcp::{
+    make_tool,
     model::{ErrorCode, ErrorData, Tool},
-    make_tool, serialize_response,
-    FabrykMcpServer, McpErrorContextExt, ToolRegistry, ToolResult,
+    serialize_response, FabrykMcpServer, McpErrorContextExt, ToolRegistry, ToolResult,
 };
 
 use crate::state::AppState;
@@ -665,8 +665,8 @@ impl ToolRegistry for OthToolsRegistry {
         match name {
             // ---- Tier 1 ----
             "get_oth_orbit_info" => Some(Box::pin(async move {
-                let args: tools::oth::GetOthOrbitInfoArgs = serde_json::from_value(args)
-                    .map_err(|e| {
+                let args: tools::oth::GetOthOrbitInfoArgs =
+                    serde_json::from_value(args).map_err(|e| {
                         ErrorData::new(
                             ErrorCode::INVALID_PARAMS,
                             format!("Invalid parameters: {}", e),
@@ -678,8 +678,8 @@ impl ToolRegistry for OthToolsRegistry {
                 serialize_response(&response)
             })),
             "list_oth_orbits" => Some(Box::pin(async move {
-                let args: tools::oth::ListOthOrbitsArgs = serde_json::from_value(args)
-                    .map_err(|e| {
+                let args: tools::oth::ListOthOrbitsArgs =
+                    serde_json::from_value(args).map_err(|e| {
                         ErrorData::new(
                             ErrorCode::INVALID_PARAMS,
                             format!("Invalid parameters: {}", e),
@@ -704,8 +704,8 @@ impl ToolRegistry for OthToolsRegistry {
                 serialize_response(&response)
             })),
             "get_oth_chord_info" => Some(Box::pin(async move {
-                let args: tools::oth::GetOthChordInfoArgs = serde_json::from_value(args)
-                    .map_err(|e| {
+                let args: tools::oth::GetOthChordInfoArgs =
+                    serde_json::from_value(args).map_err(|e| {
                         ErrorData::new(
                             ErrorCode::INVALID_PARAMS,
                             format!("Invalid parameters: {}", e),
@@ -717,8 +717,8 @@ impl ToolRegistry for OthToolsRegistry {
                 serialize_response(&response)
             })),
             "get_oth_chord_scale" => Some(Box::pin(async move {
-                let args: tools::oth::GetOthChordScaleArgs = serde_json::from_value(args)
-                    .map_err(|e| {
+                let args: tools::oth::GetOthChordScaleArgs =
+                    serde_json::from_value(args).map_err(|e| {
                         ErrorData::new(
                             ErrorCode::INVALID_PARAMS,
                             format!("Invalid parameters: {}", e),
@@ -731,8 +731,8 @@ impl ToolRegistry for OthToolsRegistry {
             })),
             // ---- Tier 2 ----
             "list_oth_modes" => Some(Box::pin(async move {
-                let args: tools::oth::ListOthModesArgs = serde_json::from_value(args)
-                    .map_err(|e| {
+                let args: tools::oth::ListOthModesArgs =
+                    serde_json::from_value(args).map_err(|e| {
                         ErrorData::new(
                             ErrorCode::INVALID_PARAMS,
                             format!("Invalid parameters: {}", e),
@@ -744,8 +744,8 @@ impl ToolRegistry for OthToolsRegistry {
                 serialize_response(&response)
             })),
             "get_oth_distance" => Some(Box::pin(async move {
-                let args: tools::oth::GetOthDistanceArgs = serde_json::from_value(args)
-                    .map_err(|e| {
+                let args: tools::oth::GetOthDistanceArgs =
+                    serde_json::from_value(args).map_err(|e| {
                         ErrorData::new(
                             ErrorCode::INVALID_PARAMS,
                             format!("Invalid parameters: {}", e),
@@ -757,8 +757,8 @@ impl ToolRegistry for OthToolsRegistry {
                 serialize_response(&response)
             })),
             "get_oth_neighbors" => Some(Box::pin(async move {
-                let args: tools::oth::GetOthNeighborsArgs = serde_json::from_value(args)
-                    .map_err(|e| {
+                let args: tools::oth::GetOthNeighborsArgs =
+                    serde_json::from_value(args).map_err(|e| {
                         ErrorData::new(
                             ErrorCode::INVALID_PARAMS,
                             format!("Invalid parameters: {}", e),
@@ -784,8 +784,8 @@ impl ToolRegistry for OthToolsRegistry {
             })),
             // ---- Tier 3 ----
             "get_oth_geodesics" => Some(Box::pin(async move {
-                let args: tools::oth::GetOthGeodesicsArgs = serde_json::from_value(args)
-                    .map_err(|e| {
+                let args: tools::oth::GetOthGeodesicsArgs =
+                    serde_json::from_value(args).map_err(|e| {
                         ErrorData::new(
                             ErrorCode::INVALID_PARAMS,
                             format!("Invalid parameters: {}", e),
@@ -797,8 +797,8 @@ impl ToolRegistry for OthToolsRegistry {
                 serialize_response(&response)
             })),
             "get_oth_crossroads" => Some(Box::pin(async move {
-                let args: tools::oth::GetOthCrossroadsArgs = serde_json::from_value(args)
-                    .map_err(|e| {
+                let args: tools::oth::GetOthCrossroadsArgs =
+                    serde_json::from_value(args).map_err(|e| {
                         ErrorData::new(
                             ErrorCode::INVALID_PARAMS,
                             format!("Invalid parameters: {}", e),
@@ -1060,7 +1060,7 @@ pub fn build_server(state: AppState) -> FabrykMcpServer {
         );
         let extra = tier_confidence_schema();
 
-        let graph_tools = GraphTools::with_shared(Arc::clone(&state.shared_graph))
+        GraphTools::with_shared(Arc::clone(&state.shared_graph))
             .with_node_filter(node_filter)
             .with_names(HashMap::from([
                 // Slot key -> exposed tool name
@@ -1153,9 +1153,7 @@ pub fn build_server(state: AppState) -> FabrykMcpServer {
             .with_extra_schema(GraphTools::SLOT_PREREQUISITES, extra.clone())
             .with_extra_schema(GraphTools::SLOT_NEIGHBORHOOD, extra.clone())
             .with_extra_schema(GraphTools::SLOT_CENTRALITY, extra.clone())
-            .with_extra_schema(GraphTools::SLOT_LEARNING_PATH, extra);
-
-        graph_tools
+            .with_extra_schema(GraphTools::SLOT_LEARNING_PATH, extra)
     };
 
     let skill_docs_path = state

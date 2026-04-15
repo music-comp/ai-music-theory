@@ -10,15 +10,14 @@ use crate::error::{Error, Result};
 
 // Re-export fabryk cache types for use by other modules.
 pub use fabryk_cli::cache::{
-    BackendPaths, BackendStatus, CacheBackend, CacheEntry, CacheManifest, CacheProject,
-    CacheStatusReport, PackagePaths, archive_name, checksum_url, download_cache, extract_archive,
-    load_manifest, package_cache, parse_backend_arg, release_url, save_manifest, shell_download,
-    verify_checksum,
+    archive_name, checksum_url, download_cache, extract_archive, load_manifest, package_cache,
+    parse_backend_arg, release_url, save_manifest, shell_download, verify_checksum, BackendPaths,
+    BackendStatus, CacheBackend, CacheEntry, CacheManifest, CacheProject, CacheStatusReport,
+    PackagePaths,
 };
 
 /// GitHub Release base URL for this project's cache archives.
-pub const RELEASE_BASE_URL: &str =
-    "https://github.com/oxur/ai-music-theory/releases/download";
+pub const RELEASE_BASE_URL: &str = "https://github.com/oxur/ai-music-theory/releases/download";
 
 /// Project prefix for cache archive names.
 pub const PROJECT_PREFIX: &str = "music-theory";
@@ -59,11 +58,7 @@ pub fn cache_status(config: &Config) -> Result<CacheStatusReport> {
 }
 
 /// Download and install a pre-built cache for the given backend.
-pub fn download_project_cache(
-    backend: &CacheBackend,
-    config: &Config,
-    force: bool,
-) -> Result<()> {
+pub fn download_project_cache(backend: &CacheBackend, config: &Config, force: bool) -> Result<()> {
     let base = config.paths.base_path()?;
     let version = env!("CARGO_PKG_VERSION");
     let proj = project();
