@@ -826,6 +826,19 @@ impl ToolRegistry for OthToolsRegistry {
 #[cfg(feature = "graph")]
 use fabryk_mcp::tier_confidence_schema;
 
+/// Collect service handles from AppState for health reporting.
+#[allow(clippy::vec_init_then_push, unused_mut)]
+fn collect_service_handles(_state: &AppState) -> Vec<fabryk::core::service::ServiceHandle> {
+    let mut svcs = Vec::new();
+    #[cfg(feature = "fts")]
+    svcs.push(_state.fts.service().clone());
+    #[cfg(feature = "graph")]
+    svcs.push(_state.graph.service().clone());
+    #[cfg(feature = "vector")]
+    svcs.push(_state.vector.service().clone());
+    svcs
+}
+
 /// Build the Music Theory MCP server from application state.
 ///
 /// Composes domain-specific tool registries and resources into a single
@@ -1174,17 +1187,7 @@ pub fn build_server(state: AppState) -> FabrykMcpServer {
              in the [6,8] metric space.",
         )
         .resources_path(skill_docs_path)
-        .with_services({
-            #[allow(unused_mut)]
-            let mut svcs = Vec::new();
-            #[cfg(feature = "fts")]
-            svcs.push(state.fts.service().clone());
-            #[cfg(feature = "graph")]
-            svcs.push(state.graph.service().clone());
-            #[cfg(feature = "vector")]
-            svcs.push(state.vector.service().clone());
-            svcs
-        })
+        .with_services(collect_service_handles(&state))
         .add(concept_tools)
         .add(guide_tools)
         .add(source_tools)
