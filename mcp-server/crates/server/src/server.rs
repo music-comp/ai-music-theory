@@ -1159,8 +1159,19 @@ pub fn build_server(state: AppState) -> FabrykMcpServer {
         .name(&state.config.server.name)
         .version(&state.config.server.version)
         .description(
-            "Music Theory AI Skill - Access comprehensive music theory materials \
-             including source texts, concept cards, and topic guides.",
+            "Music Theory AI Skill — comprehensive music theory materials and computation.\n\n\
+             QUERY STRATEGY:\n\
+             1. Start with semantic_search (mode: hybrid) for open-ended questions\n\
+             2. Use search_concepts for keyword-specific lookups\n\
+             3. Use get_concept to read full content of a result\n\
+             4. Use get_related_concepts or get_concept_neighborhood to explore connections\n\
+             5. Use get_prerequisites or get_learning_path for learning order\n\
+             6. Use find_concept_path to find how two concepts connect\n\n\
+             COMPUTATION: get_scale_notes, get_chord_notes, get_interval, transpose, \
+             get_diatonic_chords, identify_chord, identify_scale, check_enharmonic, \
+             analyze_roman_numerals for standard music theory.\n\n\
+             OPEN TONE HARMONY: get_oth_* tools for quintal/quartal chord analysis \
+             in the [6,8] metric space.",
         )
         .resources_path(skill_docs_path)
         .add(concept_tools)
@@ -1175,10 +1186,12 @@ pub fn build_server(state: AppState) -> FabrykMcpServer {
 
     #[cfg(feature = "graph")]
     {
-        builder = builder.add(graph_tools);
+        let gated_graph =
+            fabryk_mcp::ServiceAwareRegistry::new(graph_tools, vec![state.graph.service().clone()]);
+        builder = builder.add(gated_graph);
     }
 
-    builder
+    let builder = builder
         .with_resource(fabryk_mcp::StaticResourceDef {
             uri: "skill://conventions".into(),
             name: "Music Theory Conventions".into(),
@@ -1210,8 +1223,236 @@ pub fn build_server(state: AppState) -> FabrykMcpServer {
             mime_type: "text/markdown".into(),
             filename: "INDEX.md".into(),
             fallback: Some(crate::resources::default_index()),
-        })
-        .build()
+        });
+
+    // Wrap registry in DiscoverableRegistry for tool metadata + directory tool
+    let (registry, parts) = builder.into_parts();
+
+    use fabryk_mcp::{DiscoverableRegistry, ToolMeta};
+
+    let discoverable = DiscoverableRegistry::new(registry, "mt")
+        // ---- Search tools ----
+        .with_tool_meta(
+            "semantic_search",
+            ToolMeta {
+                summary: "Search by meaning using keyword, vector, or hybrid mode".into(),
+                when_to_use: "When the user asks a question or searches for a topic".into(),
+                returns: "Ranked results with relevance scores and snippets".into(),
+                next: Some(
+                    "get_concept for full content, get_related_concepts for connections".into(),
+                ),
+                category: Some("search".into()),
+            },
+        )
+        .with_tool_meta(
+            "search_concepts",
+            ToolMeta {
+                summary: "Full-text keyword search across concept cards and sources".into(),
+                when_to_use: "When searching for specific terms or phrases".into(),
+                returns: "Ranked results with relevance scores".into(),
+                next: Some("get_concept".into()),
+                category: Some("search".into()),
+            },
+        )
+        .with_tool_meta(
+            "search_by_question",
+            ToolMeta {
+                summary: "Find concepts by natural language question matching".into(),
+                when_to_use: "When the user asks a specific question about music theory".into(),
+                returns: "Concepts whose questions/descriptions match the query".into(),
+                next: Some("get_concept".into()),
+                category: Some("search".into()),
+            },
+        )
+        // ---- Content tools ----
+        .with_tool_meta(
+            "list_concepts",
+            ToolMeta {
+                summary: "List concept cards with optional filtering".into(),
+                when_to_use: "When browsing or exploring available topics".into(),
+                returns: "Array of concept summaries with title, category, tier".into(),
+                next: Some("get_concept for details".into()),
+                category: Some("content".into()),
+            },
+        )
+        .with_tool_meta(
+            "get_concept",
+            ToolMeta {
+                summary: "Retrieve a specific concept card by ID".into(),
+                when_to_use: "After finding a concept via search or graph exploration".into(),
+                returns: "Full concept card content with metadata".into(),
+                next: Some("get_related_concepts, get_prerequisites".into()),
+                category: Some("content".into()),
+            },
+        )
+        .with_tool_meta(
+            "list_sources",
+            ToolMeta {
+                summary: "List all source materials with metadata".into(),
+                when_to_use: "When looking for source texts or references".into(),
+                returns: "Source list with author, title, availability status".into(),
+                next: Some("list_source_chapters, get_source_chapter".into()),
+                category: Some("content".into()),
+            },
+        )
+        .with_tool_meta(
+            "get_source_chapter",
+            ToolMeta {
+                summary: "Read a specific chapter from a source text".into(),
+                when_to_use: "When reading original source material".into(),
+                returns: "Chapter content in markdown".into(),
+                next: Some("search_concepts for related concept cards".into()),
+                category: Some("content".into()),
+            },
+        )
+        .with_tool_meta(
+            "get_guide",
+            ToolMeta {
+                summary: "Read a topic guide".into(),
+                when_to_use: "For in-depth exploration of a topic".into(),
+                returns: "Guide content in markdown".into(),
+                next: Some("search_concepts, get_related_concepts".into()),
+                category: Some("content".into()),
+            },
+        )
+        // ---- Graph tools ----
+        .with_tool_meta(
+            "get_related_concepts",
+            ToolMeta {
+                summary: "Find concepts related to a given concept".into(),
+                when_to_use: "When exploring connections from a concept".into(),
+                returns: "Related concepts with relationship types and directions".into(),
+                next: Some("get_concept, get_concept_neighborhood".into()),
+                category: Some("graph".into()),
+            },
+        )
+        .with_tool_meta(
+            "get_prerequisites",
+            ToolMeta {
+                summary: "Get prerequisites for a concept in topological order".into(),
+                when_to_use: "When understanding what must be learned first".into(),
+                returns: "Ordered list of prerequisite concepts".into(),
+                next: Some("get_concept, get_learning_path".into()),
+                category: Some("graph".into()),
+            },
+        )
+        .with_tool_meta(
+            "get_learning_path",
+            ToolMeta {
+                summary: "Get topologically sorted learning path with tier annotations".into(),
+                when_to_use: "When planning a study sequence for a target concept".into(),
+                returns: "Ordered learning steps with tier (foundational/intermediate/advanced)"
+                    .into(),
+                next: Some("get_concept for each step".into()),
+                category: Some("graph".into()),
+            },
+        )
+        .with_tool_meta(
+            "find_concept_path",
+            ToolMeta {
+                summary: "Find shortest path between two concepts in the graph".into(),
+                when_to_use: "When exploring how two concepts connect".into(),
+                returns: "Path with intermediate concepts and relationship types".into(),
+                next: Some("get_concept for any node along the path".into()),
+                category: Some("graph".into()),
+            },
+        )
+        .with_tool_meta(
+            "get_concept_neighborhood",
+            ToolMeta {
+                summary: "Get local subgraph around a concept".into(),
+                when_to_use: "When exploring the immediate context of a concept".into(),
+                returns: "Nodes and edges within N hops".into(),
+                next: Some("get_concept, get_related_concepts".into()),
+                category: Some("graph".into()),
+            },
+        )
+        // ---- Computation tools ----
+        .with_tool_meta(
+            "get_scale_notes",
+            ToolMeta {
+                summary: "Compute notes of a musical scale given tonic and mode".into(),
+                when_to_use: "When asked about scale notes, modes, or scale construction".into(),
+                returns: "List of note names in the scale".into(),
+                next: Some("get_diatonic_chords, identify_scale".into()),
+                category: Some("computation".into()),
+            },
+        )
+        .with_tool_meta(
+            "get_chord_notes",
+            ToolMeta {
+                summary: "Compute notes of a chord given root and quality".into(),
+                when_to_use: "When asked about chord spelling or voicing".into(),
+                returns: "List of note names in the chord".into(),
+                next: Some("identify_chord, analyze_roman_numerals".into()),
+                category: Some("computation".into()),
+            },
+        )
+        .with_tool_meta(
+            "get_interval",
+            ToolMeta {
+                summary: "Calculate the interval between two notes".into(),
+                when_to_use: "When asked about the distance between notes".into(),
+                returns: "Semitone count, quality, and number".into(),
+                next: Some("transpose".into()),
+                category: Some("computation".into()),
+            },
+        )
+        .with_tool_meta(
+            "analyze_roman_numerals",
+            ToolMeta {
+                summary: "Analyze chords in a key context with Roman numeral labels".into(),
+                when_to_use: "When analyzing a chord progression or harmonic function".into(),
+                returns: "Roman numeral analysis for each chord".into(),
+                next: Some("get_diatonic_chords".into()),
+                category: Some("computation".into()),
+            },
+        )
+        // ---- OTH tools ----
+        .with_tool_meta(
+            "get_oth_orbit_info",
+            ToolMeta {
+                summary: "Get complete info about an OTH orbit (modes, scales, structure)".into(),
+                when_to_use: "When exploring quintal/quartal chord families".into(),
+                returns: "Orbit data: modes, parent scales, fiber class, Forte number".into(),
+                next: Some("get_oth_chord_scale, list_oth_modes".into()),
+                category: Some("oth".into()),
+            },
+        )
+        .with_tool_meta(
+            "get_oth_chord_scale",
+            ToolMeta {
+                summary: "Compute Tymoczko chord scale and interscalar transposition cycle".into(),
+                when_to_use: "When exploring inversions of spread voicings (quintal/quartal)"
+                    .into(),
+                returns: "Chord scale degrees and full inversion cycle with voice movements".into(),
+                next: Some("get_oth_orbit_info".into()),
+                category: Some("oth".into()),
+            },
+        )
+        .with_tool_meta(
+            "get_oth_distance",
+            ToolMeta {
+                summary: "Compute geodesic distance between two chords in [6,8] space".into(),
+                when_to_use: "When measuring harmonic distance between quintal chords".into(),
+                returns: "Distance, L1 distance, orbit membership of both chords".into(),
+                next: Some("get_oth_geodesics, get_oth_neighbors".into()),
+                category: Some("oth".into()),
+            },
+        )
+        // ---- Meta ----
+        .with_tool_meta(
+            "health",
+            ToolMeta {
+                summary: "Server health status and backend availability".into(),
+                when_to_use: "When checking if search/graph/vector backends are ready".into(),
+                returns: "Service status, tool count, backend health".into(),
+                next: None,
+                category: Some("meta".into()),
+            },
+        );
+
+    fabryk_mcp::ServerBuilder::build_with_registry(discoverable, parts)
 }
 
 // ============================================================================
@@ -1249,13 +1490,13 @@ mod tests {
 
         // Without graph feature:
         //   3 concept + 2 guide + 5 source + 2 fts + 1 semantic + 1 question + 1 health
-        //   + 9 music theory + 12 OTH = 36
+        //   + 9 music theory + 12 OTH + 1 mt_directory = 37
         // With graph feature:
-        //   36 + 17 graph = 53
+        //   37 + 17 graph = 54
         #[cfg(feature = "graph")]
-        assert_eq!(server.registry().tool_count(), 53);
+        assert_eq!(server.registry().tool_count(), 54);
         #[cfg(not(feature = "graph"))]
-        assert_eq!(server.registry().tool_count(), 36);
+        assert_eq!(server.registry().tool_count(), 37);
     }
 
     #[tokio::test]
@@ -1333,5 +1574,27 @@ mod tests {
                 tool_name
             );
         }
+    }
+
+    // --- Schema validation ---
+
+    #[tokio::test]
+    async fn test_all_tools_have_valid_schemas() {
+        let config = Config::load().unwrap();
+        let state = AppState::new(config).await.unwrap();
+        let server = build_server(state);
+        fabryk_mcp::assert_tools_valid(server.registry());
+    }
+
+    #[tokio::test]
+    async fn test_server_description_contains_query_strategy() {
+        let config = Config::load().unwrap();
+        let state = AppState::new(config).await.unwrap();
+        let server = build_server(state);
+        let desc = server.config().description.as_ref().unwrap();
+        assert!(desc.contains("QUERY STRATEGY"));
+        assert!(desc.contains("semantic_search"));
+        assert!(desc.contains("COMPUTATION"));
+        assert!(desc.contains("OPEN TONE HARMONY"));
     }
 }
