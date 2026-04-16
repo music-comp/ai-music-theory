@@ -504,7 +504,7 @@ async fn handle_index_command(force: bool, log_level_override: Option<String>) -
     // Initialize logging for CLI output
     setup_cli_logging(log_opts)?;
 
-    let index_path = config.search.index_path()?;
+    let index_path = crate::config::resolve_index_path(&config.search)?;
 
     // Check if index is fresh (unless force rebuild)
     if !force && is_index_fresh(&index_path, &config).await? {
@@ -542,7 +542,7 @@ async fn handle_status_command(log_level_override: Option<String>) -> Result<()>
     let log_opts = apply_log_level_override(&config.logging, log_level_override)?;
     setup_cli_logging(log_opts)?;
 
-    let index_path = config.search.index_path()?;
+    let index_path = crate::config::resolve_index_path(&config.search)?;
 
     if !index_path.exists() {
         println!("✗ No index found");

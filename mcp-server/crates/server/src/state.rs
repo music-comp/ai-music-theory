@@ -177,16 +177,8 @@ fn start_fts_loading(state: Arc<AppState>, needs_rebuild: bool) {
         }
 
         // Load index from disk (freshly built or pre-existing)
-        let fabryk_config = match crate::search::to_fabryk_search_config(&state.config.search) {
-            Ok(c) => c,
-            Err(e) => {
-                state.fts.service().set_state(ServiceState::Failed(format!(
-                    "Failed to resolve FTS config: {e}"
-                )));
-                return;
-            }
-        };
-        match TantivySearch::new(&fabryk_config) {
+        let search_config = state.config.search.clone();
+        match TantivySearch::new(&search_config) {
             Ok(backend) => {
                 if state.fts.set(Arc::new(backend)).is_ok() {
                     state.fts.service().set_state(ServiceState::Ready);
@@ -231,7 +223,7 @@ pub async fn initialize_fts(state: &Arc<AppState>) -> Result<()> {
         return Ok(());
     }
 
-    let index_path = state.config.search.index_path()?;
+    let index_path = crate::config::resolve_index_path(&state.config.search)?;
     let needs_rebuild = !index_exists_and_fresh(&index_path, &state.config).await?;
 
     start_fts_loading(Arc::clone(state), needs_rebuild);
@@ -543,19 +535,8 @@ mod tests {
                 .unwrap(),
             search: SearchConfig {
                 backend: backend.to_string(),
-                index_path: ".tantivy-index-test".to_string(),
-                rebuild_on_startup: false,
-                snippet_size: 200,
-                fuzzy_search: false,
-                fuzzy_distance: 2,
-                query_mode: crate::config::QueryMode::Smart,
-                minimum_match_percent: 0.6,
-                enable_stopwords: true,
-                custom_stopwords: vec![],
-                stopword_allowlist: vec![],
-                field_boost_title: 3.0,
-                field_boost_description: 2.0,
-                field_boost_content: 1.0,
+                index_path: Some(".tantivy-index-test".to_string()),
+                ..crate::config::default_search_config()
             },
             lancedb: crate::config::LanceDbConfig::default(),
         }
@@ -610,11 +591,13 @@ mod tests {
         let temp_dir = TempDir::new().expect("Failed to create temp dir");
         let mut config = test_config("tantivy");
         // Use temp directory to ensure no existing index
-        config.search.index_path = temp_dir
-            .path()
-            .join(".tantivy-index")
-            .to_string_lossy()
-            .to_string();
+        config.search.index_path = Some(
+            temp_dir
+                .path()
+                .join(".tantivy-index")
+                .to_string_lossy()
+                .to_string(),
+        );
 
         let state = AppState::new(config).await.expect("Failed to create state");
         // Without existing index, FTS should not be ready
@@ -631,11 +614,13 @@ mod tests {
         let temp_dir = TempDir::new().expect("Failed to create temp dir");
         let mut config = test_config("tantivy");
         // Use temp directory to ensure no existing index
-        config.search.index_path = temp_dir
-            .path()
-            .join(".tantivy-index")
-            .to_string_lossy()
-            .to_string();
+        config.search.index_path = Some(
+            temp_dir
+                .path()
+                .join(".tantivy-index")
+                .to_string_lossy()
+                .to_string(),
+        );
 
         let state = AppState::new(config).await.expect("Failed to create state");
 
@@ -680,7 +665,7 @@ Test content.
 
         // Build index
         let mut config = test_config("tantivy");
-        config.search.index_path = index_path.to_string_lossy().to_string();
+        config.search.index_path = Some(index_path.to_string_lossy().to_string());
         config.paths.concept_cards = concept_cards_path.to_string_lossy().to_string();
 
         crate::search::build_index(&config)
@@ -693,9 +678,7 @@ Test content.
             .expect("Failed to create state");
 
         // Load the index we just built
-        let fabryk_config = crate::search::to_fabryk_search_config(&config.search)
-            .expect("Failed to resolve FTS config");
-        let backend = TantivySearch::new(&fabryk_config).expect("Failed to load index");
+        let backend = TantivySearch::new(&config.search).expect("Failed to load index");
 
         // Update backend
         let result = state.fts.set(Arc::new(backend));
@@ -730,7 +713,7 @@ Test content.
             .expect("Failed to write test card");
 
         let mut config = test_config("tantivy");
-        config.search.index_path = index_path.to_string_lossy().to_string();
+        config.search.index_path = Some(index_path.to_string_lossy().to_string());
         config.paths.concept_cards = concept_cards_path.to_string_lossy().to_string();
 
         crate::search::build_index(&config)
@@ -742,9 +725,7 @@ Test content.
             .expect("Failed to create state");
 
         // Load and set backend
-        let fabryk_config = crate::search::to_fabryk_search_config(&config.search)
-            .expect("Failed to resolve FTS config");
-        let backend = TantivySearch::new(&fabryk_config).expect("Failed to load index");
+        let backend = TantivySearch::new(&config.search).expect("Failed to load index");
         state.fts.set(Arc::new(backend)).expect("Failed to update");
         state.fts.service().set_state(ServiceState::Ready);
 
@@ -761,11 +742,13 @@ Test content.
         let temp_dir = TempDir::new().expect("Failed to create temp dir");
         let mut config = test_config("tantivy");
         // Use temp directory to ensure no existing index
-        config.search.index_path = temp_dir
-            .path()
-            .join(".tantivy-index")
-            .to_string_lossy()
-            .to_string();
+        config.search.index_path = Some(
+            temp_dir
+                .path()
+                .join(".tantivy-index")
+                .to_string_lossy()
+                .to_string(),
+        );
 
         let state = AppState::new(config).await.expect("Failed to create state");
 
@@ -796,7 +779,7 @@ Test content.
         let mut config = test_config("tantivy");
         // Use guaranteed non-existent path
         let nonexistent_path = env::temp_dir().join(format!("nonexistent-{}", std::process::id()));
-        config.search.index_path = nonexistent_path.to_string_lossy().to_string();
+        config.search.index_path = Some(nonexistent_path.to_string_lossy().to_string());
 
         let state = Arc::new(AppState::new(config).await.expect("Failed to create state"));
 
@@ -893,7 +876,7 @@ New content.
 
         let mut config = test_config("tantivy");
         let nonexistent_path = env::temp_dir().join(format!("nonexistent-{}", std::process::id()));
-        config.search.index_path = nonexistent_path.to_string_lossy().to_string();
+        config.search.index_path = Some(nonexistent_path.to_string_lossy().to_string());
 
         let state = AppState::new(config).await.expect("Failed to create state");
         assert!(!state.fts.is_ready());
@@ -925,7 +908,7 @@ Test content.
             .expect("Failed to write test card");
 
         let mut config = test_config("tantivy");
-        config.search.index_path = index_path.to_string_lossy().to_string();
+        config.search.index_path = Some(index_path.to_string_lossy().to_string());
         config.paths.concept_cards = concept_cards_path.to_string_lossy().to_string();
         // Override other paths to point to temp directory (v0.3.0: prevent indexing real content)
         config.paths.sources_md = temp_dir
@@ -1001,7 +984,7 @@ Test content.
             .expect("Failed to write test card");
 
         let mut config = test_config("tantivy");
-        config.search.index_path = index_path.to_string_lossy().to_string();
+        config.search.index_path = Some(index_path.to_string_lossy().to_string());
         config.paths.concept_cards = concept_cards_path.to_string_lossy().to_string();
 
         // Build index first
@@ -1055,7 +1038,7 @@ Test content.
             .expect("Failed to write test card");
 
         let mut config = test_config("tantivy");
-        config.search.index_path = index_path.to_string_lossy().to_string();
+        config.search.index_path = Some(index_path.to_string_lossy().to_string());
         config.paths.concept_cards = concept_cards_path.to_string_lossy().to_string();
         // Set other paths to temp dir to avoid indexing real project files
         config.paths.sources_md = temp_dir
@@ -1107,7 +1090,7 @@ Test content.
             .expect("Failed to write test card");
 
         let mut config = test_config("tantivy");
-        config.search.index_path = index_path.to_string_lossy().to_string();
+        config.search.index_path = Some(index_path.to_string_lossy().to_string());
         config.paths.concept_cards = concept_cards_path.to_string_lossy().to_string();
         // Set other paths to temp dir to avoid indexing real project files
         config.paths.sources_md = temp_dir
@@ -1154,7 +1137,7 @@ Test content.
         let index_path = temp_dir.path().join("test-index");
 
         let mut config = test_config("tantivy");
-        config.search.index_path = index_path.to_string_lossy().to_string();
+        config.search.index_path = Some(index_path.to_string_lossy().to_string());
         // Use nonexistent concept cards path - graceful degradation should handle this
         let nonexistent_path =
             env::temp_dir().join(format!("nonexistent-cards-{}", std::process::id()));
@@ -1419,7 +1402,7 @@ Test content.
             .expect("Failed to write test card");
 
         let mut config = test_config("tantivy");
-        config.search.index_path = index_path.to_string_lossy().to_string();
+        config.search.index_path = Some(index_path.to_string_lossy().to_string());
         config.paths.concept_cards = concept_cards_path.to_string_lossy().to_string();
         config.paths.sources_md = temp_dir
             .path()
@@ -1490,7 +1473,7 @@ Test content.
             .expect("Failed to write test card");
 
         let mut config = test_config("tantivy");
-        config.search.index_path = index_path.to_string_lossy().to_string();
+        config.search.index_path = Some(index_path.to_string_lossy().to_string());
         config.paths.concept_cards = concept_cards_path.to_string_lossy().to_string();
         config.paths.sources_md = temp_dir
             .path()
@@ -1554,11 +1537,13 @@ Test content.
 
         let temp_dir = TempDir::new().expect("Failed to create temp dir");
         let mut config = test_config("tantivy");
-        config.search.index_path = temp_dir
-            .path()
-            .join(".tantivy-index")
-            .to_string_lossy()
-            .to_string();
+        config.search.index_path = Some(
+            temp_dir
+                .path()
+                .join(".tantivy-index")
+                .to_string_lossy()
+                .to_string(),
+        );
 
         let state = AppState::new(config).await.expect("Failed to create state");
 
@@ -1581,11 +1566,13 @@ Test content.
 
         let temp_dir = TempDir::new().expect("Failed to create temp dir");
         let mut config = test_config("tantivy");
-        config.search.index_path = temp_dir
-            .path()
-            .join(".tantivy-index")
-            .to_string_lossy()
-            .to_string();
+        config.search.index_path = Some(
+            temp_dir
+                .path()
+                .join(".tantivy-index")
+                .to_string_lossy()
+                .to_string(),
+        );
 
         let state = AppState::new(config).await.expect("Failed to create state");
 

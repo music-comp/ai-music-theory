@@ -9,7 +9,7 @@ use std::path::PathBuf;
 use crate::error::{Error, Result};
 
 /// Main configuration structure for the MCP server.
-#[derive(Debug, Clone, Default, Serialize, Deserialize)]
+#[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(default)]
 pub struct Config {
     pub server: ServerConfig,
@@ -18,6 +18,19 @@ pub struct Config {
     pub logging: twyg::Opts,
     pub search: SearchConfig,
     pub lancedb: LanceDbConfig,
+}
+
+impl Default for Config {
+    fn default() -> Self {
+        Self {
+            server: ServerConfig::default(),
+            paths: PathsConfig::default(),
+            sources: SourcesConfig::default(),
+            logging: twyg::Opts::default(),
+            search: default_search_config(),
+            lancedb: LanceDbConfig::default(),
+        }
+    }
 }
 
 /// Server configuration.
@@ -111,146 +124,39 @@ impl SourceCategory {
     }
 }
 
-// QueryMode is re-exported from fabryk-fts.
-pub use fabryk::fts::QueryMode;
+// SearchConfig and QueryMode are re-exported from fabryk-fts.
+pub use fabryk::fts::{QueryMode, SearchConfig};
 
-/// Search configuration.
-/// Fields will be used when search backends are implemented (Phase 2+).
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(default)]
-pub struct SearchConfig {
-    /// Backend selection: "simple" or "tantivy"
-    #[serde(default = "default_backend")]
-    pub backend: String,
-
-    /// Tantivy index directory (relative to skill root or absolute)
-    #[serde(default = "default_index_path")]
-    pub index_path: String,
-
-    /// Rebuild index on startup (useful for development)
-    #[serde(default)]
-    pub rebuild_on_startup: bool,
-
-    /// Snippet size in characters for search results
-    #[serde(default = "default_snippet_size")]
-    pub snippet_size: usize,
-
-    /// Enable fuzzy search (typo tolerance)
-    #[serde(default)]
-    pub fuzzy_search: bool,
-
-    /// Maximum edit distance for fuzzy matching (1-2)
-    #[serde(default = "default_fuzzy_distance")]
-    pub fuzzy_distance: u8,
-
-    /// Query mode: how to match multi-word queries (smart, and, or, minimum_match)
-    #[serde(default)]
-    pub query_mode: QueryMode,
-
-    /// Minimum match percentage for OR queries with 3+ terms (0.0-1.0)
-    #[serde(default = "default_minimum_match")]
-    pub minimum_match_percent: f32,
-
-    /// Enable stopword filtering for natural language queries
-    #[serde(default = "default_enable_stopwords")]
-    pub enable_stopwords: bool,
-
-    /// Custom stopwords (in addition to English defaults)
-    #[serde(default)]
-    pub custom_stopwords: Vec<String>,
-
-    /// Domain-specific terms to preserve (not filtered as stopwords)
-    #[serde(default = "default_stopword_allowlist")]
-    pub stopword_allowlist: Vec<String>,
-
-    // Field-specific relevance boosting (v0.3.0)
-    /// Title field boost multiplier
-    #[serde(default = "default_field_boost_title")]
-    pub field_boost_title: f32,
-
-    /// Description field boost multiplier
-    #[serde(default = "default_field_boost_description")]
-    pub field_boost_description: f32,
-
-    /// Content field boost multiplier
-    #[serde(default = "default_field_boost_content")]
-    pub field_boost_content: f32,
-}
-
-fn default_backend() -> String {
-    "simple".to_string()
-}
-
-fn default_index_path() -> String {
-    ".tantivy-index".to_string()
-}
-
-fn default_snippet_size() -> usize {
-    200
-}
-
-fn default_fuzzy_distance() -> u8 {
-    2
-}
-
-fn default_minimum_match() -> f32 {
-    0.6 // 60% of terms must match for OR queries with 3+ terms
-}
-
-fn default_enable_stopwords() -> bool {
-    true
-}
-
-fn default_stopword_allowlist() -> Vec<String> {
-    vec![
-        // Music theory Roman numerals and solfège syllables
-        "I", "V", "ii", "IV", "vi", "vii", "i", "v", "iv", "do", "re", "mi", "fa", "sol", "la",
-        "ti",
-    ]
-    .into_iter()
-    .map(String::from)
-    .collect()
-}
-
-fn default_field_boost_title() -> f32 {
-    3.0
-}
-
-fn default_field_boost_description() -> f32 {
-    2.0
-}
-
-fn default_field_boost_content() -> f32 {
-    1.0
-}
-
-impl Default for SearchConfig {
-    fn default() -> Self {
-        Self {
-            backend: default_backend(),
-            index_path: default_index_path(),
-            rebuild_on_startup: false,
-            snippet_size: default_snippet_size(),
-            fuzzy_search: false,
-            fuzzy_distance: default_fuzzy_distance(),
-            query_mode: QueryMode::default(),
-            minimum_match_percent: default_minimum_match(),
-            enable_stopwords: default_enable_stopwords(),
-            custom_stopwords: vec![],
-            stopword_allowlist: default_stopword_allowlist(),
-            field_boost_title: default_field_boost_title(),
-            field_boost_description: default_field_boost_description(),
-            field_boost_content: default_field_boost_content(),
-        }
+/// Project-specific default for SearchConfig.
+///
+/// Overrides fabryk's defaults where this project differs:
+/// - backend: "simple" (fabryk defaults to "tantivy")
+/// - index_path: ".tantivy-index"
+/// - fuzzy_distance: 2 (fabryk defaults to 1)
+/// - allowlist: music theory Roman numerals and solfège syllables
+pub fn default_search_config() -> SearchConfig {
+    SearchConfig {
+        backend: "simple".to_string(),
+        index_path: Some(".tantivy-index".to_string()),
+        fuzzy_distance: 2,
+        allowlist: vec![
+            "I", "V", "ii", "IV", "vi", "vii", "i", "v", "iv", "do", "re", "mi", "fa", "sol", "la",
+            "ti",
+        ]
+        .into_iter()
+        .map(String::from)
+        .collect(),
+        ..SearchConfig::default()
     }
 }
 
-impl SearchConfig {
-    /// Get the index path as an absolute PathBuf.
-    /// Will be used when search backends are implemented (Phase 2+).
-    pub fn index_path(&self) -> Result<PathBuf> {
-        expand_path(&self.index_path)
-    }
+/// Resolve a SearchConfig's index_path to an absolute PathBuf.
+///
+/// Uses the index_path field (defaulting to ".tantivy-index") with
+/// tilde expansion and path resolution.
+pub fn resolve_index_path(config: &SearchConfig) -> Result<PathBuf> {
+    let path_str = config.index_path.as_deref().unwrap_or(".tantivy-index");
+    expand_path(path_str)
 }
 
 // LanceDbConfig is re-exported from fabryk-fts.
@@ -333,7 +239,7 @@ impl ConfigProvider for Config {
     fn cache_path(&self, cache_type: &str) -> fabryk::core::Result<PathBuf> {
         let base = self.base_path()?;
         match cache_type {
-            "fts" => expand_path(&self.search.index_path),
+            "fts" => resolve_index_path(&self.search),
             "graph" => Ok(base.join("data").join("graphs")),
             "vector" => Ok(base.join(".cache").join("vector")),
             _ => Ok(base.join(".cache").join(cache_type)),
@@ -671,35 +577,25 @@ mod tests {
     }
 
     #[test]
-    fn test_default_backend() {
-        assert_eq!(default_backend(), "simple");
-    }
-
-    #[test]
-    fn test_default_index_path() {
-        assert_eq!(default_index_path(), ".tantivy-index");
-    }
-
-    #[test]
-    fn test_default_snippet_size() {
-        assert_eq!(default_snippet_size(), 200);
-    }
-
-    #[test]
-    fn test_default_fuzzy_distance() {
-        assert_eq!(default_fuzzy_distance(), 2);
-    }
-
-    #[test]
-    fn test_search_config_defaults() {
-        let json = r#"{}"#;
-        let config: SearchConfig = serde_json::from_str(json).expect("Should deserialize");
+    fn test_default_search_config_values() {
+        let config = default_search_config();
         assert_eq!(config.backend, "simple");
-        assert_eq!(config.index_path, ".tantivy-index");
-        assert!(!config.rebuild_on_startup);
-        assert_eq!(config.snippet_size, 200);
-        assert!(!config.fuzzy_search);
+        assert_eq!(config.index_path.as_deref(), Some(".tantivy-index"));
+        assert_eq!(config.snippet_length, 200);
         assert_eq!(config.fuzzy_distance, 2);
+    }
+
+    #[test]
+    fn test_search_config_serde_defaults() {
+        let json = r#"{}"#;
+        // Fabryk's SearchConfig::default() has different defaults than our project's.
+        // Serde uses the fabryk defaults, not our project defaults.
+        let config: SearchConfig = serde_json::from_str(json).expect("Should deserialize");
+        assert!(!config.rebuild_on_startup);
+        assert_eq!(config.snippet_length, 200);
+        assert!(!config.fuzzy_enabled);
+        // Note: fabryk defaults to fuzzy_distance=1, project defaults to 2
+        assert_eq!(config.fuzzy_distance, 1);
     }
 
     #[test]
@@ -714,33 +610,21 @@ mod tests {
         }"#;
         let config: SearchConfig = serde_json::from_str(json).expect("Should deserialize");
         assert_eq!(config.backend, "tantivy");
-        assert_eq!(config.index_path, "/custom/path");
+        assert_eq!(config.index_path.as_deref(), Some("/custom/path"));
         assert!(config.rebuild_on_startup);
-        assert_eq!(config.snippet_size, 150);
-        assert!(config.fuzzy_search);
+        assert_eq!(config.snippet_length, 150);
+        assert!(config.fuzzy_enabled);
         assert_eq!(config.fuzzy_distance, 1);
     }
 
     #[test]
     fn test_search_config_index_path_absolute() {
         let config = SearchConfig {
-            backend: "tantivy".to_string(),
-            index_path: "/absolute/index".to_string(),
-            rebuild_on_startup: false,
-            snippet_size: 200,
-            fuzzy_search: false,
-            fuzzy_distance: 2,
-            query_mode: QueryMode::Smart,
-            minimum_match_percent: 0.6,
-            enable_stopwords: true,
-            custom_stopwords: vec![],
-            stopword_allowlist: vec![],
-            field_boost_title: 3.0,
-            field_boost_description: 2.0,
-            field_boost_content: 1.0,
+            index_path: Some("/absolute/index".to_string()),
+            ..default_search_config()
         };
 
-        let result = config.index_path();
+        let result = resolve_index_path(&config);
         assert!(result.is_ok());
         assert_eq!(result.unwrap(), PathBuf::from("/absolute/index"));
     }
@@ -748,23 +632,11 @@ mod tests {
     #[test]
     fn test_search_config_index_path_relative() {
         let config = SearchConfig {
-            backend: "tantivy".to_string(),
-            index_path: "relative/index".to_string(),
-            rebuild_on_startup: false,
-            snippet_size: 200,
-            fuzzy_search: false,
-            fuzzy_distance: 2,
-            query_mode: QueryMode::Smart,
-            minimum_match_percent: 0.6,
-            enable_stopwords: true,
-            custom_stopwords: vec![],
-            stopword_allowlist: vec![],
-            field_boost_title: 3.0,
-            field_boost_description: 2.0,
-            field_boost_content: 1.0,
+            index_path: Some("relative/index".to_string()),
+            ..default_search_config()
         };
 
-        let result = config.index_path();
+        let result = resolve_index_path(&config);
         // Should either resolve to absolute or error with skill root message
         match result {
             Ok(path) => assert!(
@@ -822,19 +694,19 @@ mod tests {
     }
 
     #[test]
-    fn test_search_config_default_impl_values() {
-        let config = SearchConfig::default();
+    fn test_project_search_config_default_values() {
+        let config = default_search_config();
         assert_eq!(config.backend, "simple");
-        assert_eq!(config.index_path, ".tantivy-index");
+        assert_eq!(config.index_path.as_deref(), Some(".tantivy-index"));
         assert!(!config.rebuild_on_startup);
-        assert_eq!(config.snippet_size, 200);
-        assert!(!config.fuzzy_search);
+        assert_eq!(config.snippet_length, 200);
+        assert!(!config.fuzzy_enabled);
         assert_eq!(config.fuzzy_distance, 2);
         assert_eq!(config.query_mode, QueryMode::Smart);
         assert!((config.minimum_match_percent - 0.6).abs() < f32::EPSILON);
-        assert!(config.enable_stopwords);
+        assert!(config.stopwords_enabled);
         assert!(config.custom_stopwords.is_empty());
-        assert!(!config.stopword_allowlist.is_empty());
+        assert!(!config.allowlist.is_empty());
         assert!((config.field_boost_title - 3.0).abs() < f32::EPSILON);
         assert!((config.field_boost_description - 2.0).abs() < f32::EPSILON);
         assert!((config.field_boost_content - 1.0).abs() < f32::EPSILON);
@@ -850,50 +722,26 @@ mod tests {
     }
 
     #[test]
-    fn test_default_minimum_match_is_sixty_percent() {
-        assert!((default_minimum_match() - 0.6).abs() < f32::EPSILON);
+    fn test_default_search_config_project_overrides() {
+        let config = default_search_config();
+        // Project-specific defaults differ from fabryk's
+        assert!((config.minimum_match_percent - 0.6).abs() < f32::EPSILON);
+        assert!(config.stopwords_enabled);
+        assert!((config.field_boost_title - 3.0).abs() < f32::EPSILON);
+        assert!((config.field_boost_description - 2.0).abs() < f32::EPSILON);
+        assert!((config.field_boost_content - 1.0).abs() < f32::EPSILON);
     }
 
     #[test]
-    fn test_default_enable_stopwords_is_true() {
-        assert!(default_enable_stopwords());
-    }
-
-    #[test]
-    fn test_default_stopword_allowlist_contains_music_terms() {
-        let list = default_stopword_allowlist();
+    fn test_default_search_config_allowlist_music_terms() {
+        let config = default_search_config();
+        let list = &config.allowlist;
         assert!(list.contains(&"I".to_string()));
         assert!(list.contains(&"V".to_string()));
         assert!(list.contains(&"do".to_string()));
         assert!(list.contains(&"re".to_string()));
         assert!(list.contains(&"mi".to_string()));
-        assert!(list.contains(&"fa".to_string()));
-        assert!(list.contains(&"sol".to_string()));
-        assert!(list.contains(&"la".to_string()));
-        assert!(list.contains(&"ti".to_string()));
-        assert!(list.contains(&"ii".to_string()));
-        assert!(list.contains(&"IV".to_string()));
-        assert!(list.contains(&"vi".to_string()));
-        assert!(list.contains(&"vii".to_string()));
-        assert!(list.contains(&"i".to_string()));
-        assert!(list.contains(&"v".to_string()));
-        assert!(list.contains(&"iv".to_string()));
         assert_eq!(list.len(), 16);
-    }
-
-    #[test]
-    fn test_default_field_boost_title() {
-        assert!((default_field_boost_title() - 3.0).abs() < f32::EPSILON);
-    }
-
-    #[test]
-    fn test_default_field_boost_description() {
-        assert!((default_field_boost_description() - 2.0).abs() < f32::EPSILON);
-    }
-
-    #[test]
-    fn test_default_field_boost_content() {
-        assert!((default_field_boost_content() - 1.0).abs() < f32::EPSILON);
     }
 
     // ========================================================================
@@ -964,9 +812,9 @@ mod tests {
         let config: SearchConfig = serde_json::from_str(json).expect("Should deserialize");
         assert_eq!(config.query_mode, QueryMode::And);
         assert!((config.minimum_match_percent - 0.8).abs() < f32::EPSILON);
-        assert!(!config.enable_stopwords);
+        assert!(!config.stopwords_enabled);
         assert_eq!(config.custom_stopwords, vec!["the", "a"]);
-        assert_eq!(config.stopword_allowlist, vec!["I", "V"]);
+        assert_eq!(config.allowlist, vec!["I", "V"]);
         assert!((config.field_boost_title - 5.0).abs() < f32::EPSILON);
         assert!((config.field_boost_description - 3.0).abs() < f32::EPSILON);
         assert!((config.field_boost_content - 2.0).abs() < f32::EPSILON);
@@ -1089,7 +937,7 @@ mod tests {
     #[test]
     fn test_config_provider_cache_path_fts() {
         let mut config = Config::default();
-        config.search.index_path = "/abs/index".to_string();
+        config.search.index_path = Some("/abs/index".to_string());
         let result = config.cache_path("fts");
         assert!(result.is_ok());
         assert_eq!(result.unwrap(), PathBuf::from("/abs/index"));

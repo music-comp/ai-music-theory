@@ -1024,8 +1024,8 @@ pub fn build_server(state: AppState) -> FabrykMcpServer {
     .with_backends(probes)
     .with_search_config(fabryk_mcp::SearchConfigInfo {
         query_mode: format!("{:?}", state.config.search.query_mode).to_lowercase(),
-        stopwords_enabled: state.config.search.enable_stopwords,
-        fuzzy_search: state.config.search.fuzzy_search,
+        stopwords_enabled: state.config.search.stopwords_enabled,
+        fuzzy_search: state.config.search.fuzzy_enabled,
         field_boosts: Some(fabryk_mcp::FieldBoosts {
             title: state.config.search.field_boost_title,
             description: state.config.search.field_boost_description,
