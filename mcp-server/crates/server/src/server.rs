@@ -1174,6 +1174,17 @@ pub fn build_server(state: AppState) -> FabrykMcpServer {
              in the [6,8] metric space.",
         )
         .resources_path(skill_docs_path)
+        .with_services({
+            #[allow(unused_mut)]
+            let mut svcs = Vec::new();
+            #[cfg(feature = "fts")]
+            svcs.push(state.fts.service().clone());
+            #[cfg(feature = "graph")]
+            svcs.push(state.graph.service().clone());
+            #[cfg(feature = "vector")]
+            svcs.push(state.vector.service().clone());
+            svcs
+        })
         .add(concept_tools)
         .add(guide_tools)
         .add(source_tools)
