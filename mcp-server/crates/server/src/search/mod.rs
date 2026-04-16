@@ -79,7 +79,6 @@ pub async fn build_index(
     let content_dirs: Vec<(std::path::PathBuf, &str)> = [
         (config.paths.concept_cards_path(), "concept_cards"),
         (config.paths.sources_md_path(), "source_chapters"),
-        #[cfg(feature = "fts")]
         (config.paths.concepts_unified_path(), "unified_concepts"),
         (config.paths.guides_path(), "guides"),
     ]

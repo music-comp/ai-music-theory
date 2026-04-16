@@ -26,10 +26,7 @@ use crate::error::{Error, Result};
 // Re-exports from fabryk::graph — types
 // ============================================================================
 
-pub use fabryk::graph::{
-    Edge as FabrykEdge, EdgeOrigin as FabrykEdgeOrigin, GraphData, Node as FabrykNode, NodeType,
-    Relationship as FabrykRelationship,
-};
+pub use fabryk::graph::{Edge, EdgeOrigin, GraphData, Node, NodeType, Relationship};
 
 pub use fabryk::graph::{BuildStats, GraphBuilder, GraphExtractor};
 
@@ -49,8 +46,8 @@ pub use fabryk::graph::{compute_stats, quick_summary};
 // ============================================================================
 
 pub use fabryk::graph::{
-    CentralityScore, GraphStats as FabrykGraphStats, NeighborhoodResult, PathResult,
-    PrerequisitesResult, ValidationIssue, ValidationResult,
+    CentralityScore, GraphStats, NeighborhoodResult, PathResult, PrerequisitesResult,
+    ValidationIssue, ValidationResult,
 };
 
 // ============================================================================
@@ -574,22 +571,13 @@ mod tests {
 
     #[test]
     fn test_to_fabryk_relationship_same_as() {
-        assert_eq!(
-            to_fabryk_relationship("SameAs"),
-            Relationship::Custom("same_as".to_string())
-        );
-        assert_eq!(
-            to_fabryk_relationship("same_as"),
-            Relationship::Custom("same_as".to_string())
-        );
+        assert_eq!(to_fabryk_relationship("SameAs"), Relationship::SameAs);
+        assert_eq!(to_fabryk_relationship("same_as"), Relationship::SameAs);
     }
 
     #[test]
     fn test_to_fabryk_relationship_cites() {
-        assert_eq!(
-            to_fabryk_relationship("Cites"),
-            Relationship::Custom("cites".to_string())
-        );
+        assert_eq!(to_fabryk_relationship("Cites"), Relationship::Cites);
     }
 
     #[test]
@@ -636,14 +624,14 @@ mod tests {
 
     #[test]
     fn test_from_fabryk_relationship_same_as() {
-        let rel = Relationship::Custom("same_as".to_string());
-        assert_eq!(from_fabryk_relationship(&rel), "same_as");
+        let rel = Relationship::SameAs;
+        assert_eq!(from_fabryk_relationship(&rel), "SameAs");
     }
 
     #[test]
     fn test_from_fabryk_relationship_cites() {
-        let rel = Relationship::Custom("cites".to_string());
-        assert_eq!(from_fabryk_relationship(&rel), "cites");
+        let rel = Relationship::Cites;
+        assert_eq!(from_fabryk_relationship(&rel), "Cites");
     }
 
     #[test]
@@ -676,16 +664,16 @@ mod tests {
     fn test_relationship_round_trip_same_as() {
         let fabryk_rel = to_fabryk_relationship("SameAs");
         let back = from_fabryk_relationship(&fabryk_rel);
-        // "SameAs" parses to Custom("same_as"), Display outputs "same_as"
-        assert_eq!(back, "same_as");
+        // "SameAs" parses to SameAs variant, Display outputs "SameAs"
+        assert_eq!(back, "SameAs");
     }
 
     #[test]
     fn test_relationship_round_trip_cites() {
         let fabryk_rel = to_fabryk_relationship("Cites");
         let back = from_fabryk_relationship(&fabryk_rel);
-        // "Cites" parses to Custom("cites"), Display outputs "cites"
-        assert_eq!(back, "cites");
+        // "Cites" parses to Cites variant, Display outputs "Cites"
+        assert_eq!(back, "Cites");
     }
 
     // -----------------------------------------------------------------------
@@ -950,10 +938,7 @@ mod tests {
 
     #[test]
     fn test_to_fabryk_relationship_case_insensitive_cites() {
-        assert_eq!(
-            to_fabryk_relationship("CITES"),
-            Relationship::Custom("cites".to_string())
-        );
+        assert_eq!(to_fabryk_relationship("CITES"), Relationship::Cites);
     }
 
     // -----------------------------------------------------------------------
@@ -1588,12 +1573,8 @@ mod tests {
             .expect("edge");
         data.add_edge(Edge::new("c", "d", Relationship::Extends))
             .expect("edge");
-        data.add_edge(Edge::new(
-            "a",
-            "c",
-            Relationship::Custom("same_as".to_string()),
-        ))
-        .expect("edge");
+        data.add_edge(Edge::new("a", "c", Relationship::SameAs))
+            .expect("edge");
 
         fabryk::graph::save_graph(&data, graphs_dir.join("concept_graph.json"), None)
             .expect("save");
@@ -1732,12 +1713,8 @@ mod tests {
             .expect("edge");
         data.add_edge(Edge::new("s1", "c1", Relationship::Introduces))
             .expect("edge");
-        data.add_edge(Edge::new(
-            "c2",
-            "s1",
-            Relationship::Custom("cites".to_string()),
-        ))
-        .expect("edge");
+        data.add_edge(Edge::new("c2", "s1", Relationship::Cites))
+            .expect("edge");
 
         let stats = fabryk::graph::compute_stats(&data);
         assert_eq!(stats.node_count, 5);
@@ -1809,14 +1786,8 @@ mod tests {
 
     #[test]
     fn test_to_fabryk_relationship_mixed_case_same_as() {
-        assert_eq!(
-            to_fabryk_relationship("SAMEAS"),
-            Relationship::Custom("same_as".to_string())
-        );
-        assert_eq!(
-            to_fabryk_relationship("SAME_AS"),
-            Relationship::Custom("same_as".to_string())
-        );
+        assert_eq!(to_fabryk_relationship("SAMEAS"), Relationship::SameAs);
+        assert_eq!(to_fabryk_relationship("SAME_AS"), Relationship::SameAs);
     }
 
     #[test]

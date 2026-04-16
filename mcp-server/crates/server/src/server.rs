@@ -18,14 +18,6 @@ use crate::state::AppState;
 use crate::tools;
 
 // ============================================================================
-// Helper function
-// ============================================================================
-
-fn to_mcp_error(e: crate::error::Error, context: &str) -> ErrorData {
-    e.to_mcp_error_with_context(context)
-}
-
-// ============================================================================
 // MusicTheoryToolsRegistry (9 tools — pure computation, no state needed)
 // ============================================================================
 
@@ -244,7 +236,7 @@ impl ToolRegistry for MusicTheoryToolsRegistry {
                         )
                     })?;
                 let response = tools::music_theory::get_scale_notes(args)
-                    .map_err(|e| to_mcp_error(e, "Error computing scale"))?;
+                    .map_err(|e| e.to_mcp_error_with_context("Error computing scale"))?;
                 serialize_response(&response)
             })),
             "get_chord_notes" => Some(Box::pin(async move {
@@ -257,7 +249,7 @@ impl ToolRegistry for MusicTheoryToolsRegistry {
                         )
                     })?;
                 let response = tools::music_theory::get_chord_notes(args)
-                    .map_err(|e| to_mcp_error(e, "Error computing chord"))?;
+                    .map_err(|e| e.to_mcp_error_with_context("Error computing chord"))?;
                 serialize_response(&response)
             })),
             "get_interval" => Some(Box::pin(async move {
@@ -270,7 +262,7 @@ impl ToolRegistry for MusicTheoryToolsRegistry {
                         )
                     })?;
                 let response = tools::music_theory::get_interval(args)
-                    .map_err(|e| to_mcp_error(e, "Error computing interval"))?;
+                    .map_err(|e| e.to_mcp_error_with_context("Error computing interval"))?;
                 serialize_response(&response)
             })),
             "transpose" => Some(Box::pin(async move {
@@ -283,7 +275,7 @@ impl ToolRegistry for MusicTheoryToolsRegistry {
                         )
                     })?;
                 let response = tools::music_theory::transpose(args)
-                    .map_err(|e| to_mcp_error(e, "Error transposing"))?;
+                    .map_err(|e| e.to_mcp_error_with_context("Error transposing"))?;
                 serialize_response(&response)
             })),
             "get_diatonic_chords" => Some(Box::pin(async move {
@@ -296,7 +288,7 @@ impl ToolRegistry for MusicTheoryToolsRegistry {
                         )
                     })?;
                 let response = tools::music_theory::get_diatonic_chords(args)
-                    .map_err(|e| to_mcp_error(e, "Error computing diatonic chords"))?;
+                    .map_err(|e| e.to_mcp_error_with_context("Error computing diatonic chords"))?;
                 serialize_response(&response)
             })),
             "identify_chord" => Some(Box::pin(async move {
@@ -309,7 +301,7 @@ impl ToolRegistry for MusicTheoryToolsRegistry {
                         )
                     })?;
                 let response = tools::music_theory::identify_chord(args)
-                    .map_err(|e| to_mcp_error(e, "Error identifying chord"))?;
+                    .map_err(|e| e.to_mcp_error_with_context("Error identifying chord"))?;
                 serialize_response(&response)
             })),
             "identify_scale" => Some(Box::pin(async move {
@@ -322,7 +314,7 @@ impl ToolRegistry for MusicTheoryToolsRegistry {
                         )
                     })?;
                 let response = tools::music_theory::identify_scale(args)
-                    .map_err(|e| to_mcp_error(e, "Error identifying scale"))?;
+                    .map_err(|e| e.to_mcp_error_with_context("Error identifying scale"))?;
                 serialize_response(&response)
             })),
             "check_enharmonic" => Some(Box::pin(async move {
@@ -335,7 +327,7 @@ impl ToolRegistry for MusicTheoryToolsRegistry {
                     )
                 })?;
                 let response = tools::music_theory::check_enharmonic(args)
-                    .map_err(|e| to_mcp_error(e, "Error checking enharmonic"))?;
+                    .map_err(|e| e.to_mcp_error_with_context("Error checking enharmonic"))?;
                 serialize_response(&response)
             })),
             "analyze_roman_numerals" => Some(Box::pin(async move {
@@ -348,7 +340,7 @@ impl ToolRegistry for MusicTheoryToolsRegistry {
                         )
                     })?;
                 let response = tools::music_theory::analyze_roman_numerals(args)
-                    .map_err(|e| to_mcp_error(e, "Error analyzing roman numerals"))?;
+                    .map_err(|e| e.to_mcp_error_with_context("Error analyzing roman numerals"))?;
                 serialize_response(&response)
             })),
             _ => None,
@@ -674,7 +666,7 @@ impl ToolRegistry for OthToolsRegistry {
                         )
                     })?;
                 let response = tools::oth::get_oth_orbit_info(args)
-                    .map_err(|e| to_mcp_error(e, "Error getting orbit info"))?;
+                    .map_err(|e| e.to_mcp_error_with_context("Error getting orbit info"))?;
                 serialize_response(&response)
             })),
             "list_oth_orbits" => Some(Box::pin(async move {
@@ -687,7 +679,7 @@ impl ToolRegistry for OthToolsRegistry {
                         )
                     })?;
                 let response = tools::oth::list_oth_orbits(args)
-                    .map_err(|e| to_mcp_error(e, "Error listing orbits"))?;
+                    .map_err(|e| e.to_mcp_error_with_context("Error listing orbits"))?;
                 serialize_response(&response)
             })),
             "get_oth_parent_scales" => Some(Box::pin(async move {
@@ -700,7 +692,7 @@ impl ToolRegistry for OthToolsRegistry {
                         )
                     })?;
                 let response = tools::oth::get_oth_parent_scales(args)
-                    .map_err(|e| to_mcp_error(e, "Error getting parent scales"))?;
+                    .map_err(|e| e.to_mcp_error_with_context("Error getting parent scales"))?;
                 serialize_response(&response)
             })),
             "get_oth_chord_info" => Some(Box::pin(async move {
@@ -713,7 +705,7 @@ impl ToolRegistry for OthToolsRegistry {
                         )
                     })?;
                 let response = tools::oth::get_oth_chord_info(args)
-                    .map_err(|e| to_mcp_error(e, "Error identifying chord"))?;
+                    .map_err(|e| e.to_mcp_error_with_context("Error identifying chord"))?;
                 serialize_response(&response)
             })),
             "get_oth_chord_scale" => Some(Box::pin(async move {
@@ -726,7 +718,7 @@ impl ToolRegistry for OthToolsRegistry {
                         )
                     })?;
                 let response = tools::oth::get_oth_chord_scale(args)
-                    .map_err(|e| to_mcp_error(e, "Error computing chord scale"))?;
+                    .map_err(|e| e.to_mcp_error_with_context("Error computing chord scale"))?;
                 serialize_response(&response)
             })),
             // ---- Tier 2 ----
@@ -740,7 +732,7 @@ impl ToolRegistry for OthToolsRegistry {
                         )
                     })?;
                 let response = tools::oth::list_oth_modes(args)
-                    .map_err(|e| to_mcp_error(e, "Error listing modes"))?;
+                    .map_err(|e| e.to_mcp_error_with_context("Error listing modes"))?;
                 serialize_response(&response)
             })),
             "get_oth_distance" => Some(Box::pin(async move {
@@ -753,7 +745,7 @@ impl ToolRegistry for OthToolsRegistry {
                         )
                     })?;
                 let response = tools::oth::get_oth_distance(args)
-                    .map_err(|e| to_mcp_error(e, "Error computing distance"))?;
+                    .map_err(|e| e.to_mcp_error_with_context("Error computing distance"))?;
                 serialize_response(&response)
             })),
             "get_oth_neighbors" => Some(Box::pin(async move {
@@ -766,7 +758,7 @@ impl ToolRegistry for OthToolsRegistry {
                         )
                     })?;
                 let response = tools::oth::get_oth_neighbors(args)
-                    .map_err(|e| to_mcp_error(e, "Error getting neighbors"))?;
+                    .map_err(|e| e.to_mcp_error_with_context("Error getting neighbors"))?;
                 serialize_response(&response)
             })),
             "verify_oth_properties" => Some(Box::pin(async move {
@@ -779,7 +771,7 @@ impl ToolRegistry for OthToolsRegistry {
                         )
                     })?;
                 let response = tools::oth::verify_oth_properties(args)
-                    .map_err(|e| to_mcp_error(e, "Error verifying properties"))?;
+                    .map_err(|e| e.to_mcp_error_with_context("Error verifying properties"))?;
                 serialize_response(&response)
             })),
             // ---- Tier 3 ----
@@ -793,7 +785,7 @@ impl ToolRegistry for OthToolsRegistry {
                         )
                     })?;
                 let response = tools::oth::get_oth_geodesics(args)
-                    .map_err(|e| to_mcp_error(e, "Error computing geodesics"))?;
+                    .map_err(|e| e.to_mcp_error_with_context("Error computing geodesics"))?;
                 serialize_response(&response)
             })),
             "get_oth_crossroads" => Some(Box::pin(async move {
@@ -806,7 +798,7 @@ impl ToolRegistry for OthToolsRegistry {
                         )
                     })?;
                 let response = tools::oth::get_oth_crossroads(args)
-                    .map_err(|e| to_mcp_error(e, "Error getting crossroads"))?;
+                    .map_err(|e| e.to_mcp_error_with_context("Error getting crossroads"))?;
                 serialize_response(&response)
             })),
             "find_oth_modes_by_opening" => Some(Box::pin(async move {
@@ -819,7 +811,7 @@ impl ToolRegistry for OthToolsRegistry {
                         )
                     })?;
                 let response = tools::oth::find_oth_modes_by_opening(args)
-                    .map_err(|e| to_mcp_error(e, "Error finding modes by opening"))?;
+                    .map_err(|e| e.to_mcp_error_with_context("Error finding modes by opening"))?;
                 serialize_response(&response)
             })),
             _ => None,
