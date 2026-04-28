@@ -4451,6 +4451,8 @@ checksum = "2195bf6aa996a481483b29d62a7663eed3fe39600c460e323f8ff41e90bdd89b"
 [[package]]
 name = "music-comp-mt"
 version = "0.5.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "cc77c40791377dfa2522d16104710aa495bdb927e8f1380c6c6d06cae4c1369f"
 dependencies = [
  "regex",
  "serde",

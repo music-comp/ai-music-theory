@@ -10,6 +10,7 @@
 # See: https://doc.rust-lang.org/cargo/reference/overriding-dependencies.html#paths-overrides
 
 paths = [
+    "/path/to/your/mt-rs/crates/mt",
     "/path/to/your/ecl/crates/fabryk",
     "/path/to/your/ecl/crates/fabryk-core",
     "/path/to/your/ecl/crates/fabryk-content",

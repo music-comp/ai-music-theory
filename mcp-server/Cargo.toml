@@ -60,9 +60,7 @@ blake3 = "1.8"
 chrono = { version = "0.4", features = ["serde"] }
 
 # Music theory computation
-music-comp-mt = { version = "0.5", path = "../../mt-rs/crates/mt", features = [
-    "serde",
-] }
+music-comp-mt = { version = "0.5", features = ["serde"] }
 
 # Fabryk framework (umbrella crates pull in sub-crates transitively)
 # For local development, create .cargo/config.toml with path overrides
