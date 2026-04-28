@@ -1,4 +1,5 @@
 .DS_Store
+.venv
 .claude*
 /workbench
 /mcp-server/workbench
