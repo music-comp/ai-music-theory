@@ -1477,12 +1477,21 @@ pub fn build_server(state: AppState) -> FabrykMcpServer {
 mod tests {
     use super::*;
     use crate::config::Config;
+    use fabryk::core::ConfigManager;
+
+    /// Load Config from this crate's `config/default.toml`, regardless of CWD or
+    /// host filesystem layout. Keeps tests independent of `path_resolver()`'s
+    /// fallbacks (which assume a developer-machine layout that doesn't exist on CI).
+    fn load_test_config() -> Config {
+        let path = concat!(env!("CARGO_MANIFEST_DIR"), "/config/default.toml");
+        <Config as ConfigManager>::load(Some(path)).unwrap()
+    }
 
     // --- Build server ---
 
     #[tokio::test]
     async fn test_build_server() {
-        let config = Config::load().unwrap();
+        let config = load_test_config();
         let state = AppState::new(config.clone()).await.unwrap();
         let server = build_server(state);
 
@@ -1498,7 +1507,7 @@ mod tests {
 
     #[tokio::test]
     async fn test_build_server_total_tool_count() {
-        let config = Config::load().unwrap();
+        let config = load_test_config();
         let state = AppState::new(config).await.unwrap();
         let server = build_server(state);
 
@@ -1515,7 +1524,7 @@ mod tests {
 
     #[tokio::test]
     async fn test_build_server_has_all_tools() {
-        let config = Config::load().unwrap();
+        let config = load_test_config();
         let state = AppState::new(config).await.unwrap();
         let server = build_server(state);
         let registry = server.registry();
@@ -1546,7 +1555,7 @@ mod tests {
     #[cfg(feature = "graph")]
     #[tokio::test]
     async fn test_build_server_has_graph_tools() {
-        let config = Config::load().unwrap();
+        let config = load_test_config();
         let state = AppState::new(config).await.unwrap();
         let server = build_server(state);
         let registry = server.registry();
@@ -1594,7 +1603,7 @@ mod tests {
 
     #[tokio::test]
     async fn test_all_tools_have_valid_schemas() {
-        let config = Config::load().unwrap();
+        let config = load_test_config();
         let state = AppState::new(config).await.unwrap();
         let server = build_server(state);
         fabryk_mcp::assert_tools_valid(server.registry());
@@ -1602,7 +1611,7 @@ mod tests {
 
     #[tokio::test]
     async fn test_server_description_contains_query_strategy() {
-        let config = Config::load().unwrap();
+        let config = load_test_config();
         let state = AppState::new(config).await.unwrap();
         let server = build_server(state);
         let desc = server.config().description.as_ref().unwrap();
